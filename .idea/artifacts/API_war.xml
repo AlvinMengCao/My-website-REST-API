@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="API:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="My_Website-1.0-SNAPSHOT.war" />
-  </artifact>
-</component>
