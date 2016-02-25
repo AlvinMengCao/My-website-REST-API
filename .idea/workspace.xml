@@ -5,25 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="577bb8e5-71c2-48c4-bb11-26addb7be6e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/My_Website-1.0-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Others/adf.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/api/Me.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/api/WebSiteComment.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/core/ApplicationConfiguration.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/core/MyApplication.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dao/HibernateUtils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/dao/WebSiteCommentDAO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/health/WebSiteCommentCheck.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/pojo/WebSiteCommentPOJO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/resource/WebSiteResource.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/original-My_Website-1.0-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/dao/WebSiteCommentDAOTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-dao.WebSiteCommentDAOTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/surefire-reports/dao.WebSiteCommentDAOTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="API.iws" />
@@ -68,11 +49,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="46" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
+              <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dependency-reduced-pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dependency-reduced-pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/core/MyApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.4792123">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -100,12 +101,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adf.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Others/adf.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-              <folding />
+            <state vertical-scroll-proportion="24.342857">
+              <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+              <folding>
+                <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+                <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+                <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+                <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+                <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+                <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+                <element signature="n#dependency#6;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+                <element signature="n#dependency#7;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+                <element signature="n#dependency#8;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+                <element signature="n#dependency#9;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,27 +138,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
-              <folding>
-                <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#dependency#6;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#dependency#7;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#dependency#8;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#dependency#9;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -304,20 +295,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="API" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="API" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -328,7 +305,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21034482" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -938,7 +915,7 @@
       <workItem from="1456365164719" duration="41000" />
       <workItem from="1456365763821" duration="8194000" />
       <workItem from="1456375181003" duration="2557000" />
-      <workItem from="1456379180825" duration="991000" />
+      <workItem from="1456379180825" duration="2792000" />
     </task>
     <servers />
   </component>
@@ -975,7 +952,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43802000" />
+    <option name="totallyTimeSpent" value="45603000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -995,7 +972,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49217936" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1006,7 +983,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18794914" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20453289" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29718456" sideWeight="0.49585405" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1038,13 +1015,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/com/google/common/base/Preconditions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1404,32 +1374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5334421">
-          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
-          <folding>
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#6;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#7;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#8;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#9;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Others/adf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1488,10 +1432,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dependency-reduced-pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="24.342857">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+          <folding>
+            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#6;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#7;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#8;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#9;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="46" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4792123">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1502,12 +1481,11 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>API:jar</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.21034482" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
