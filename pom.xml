@@ -72,11 +72,11 @@
         </dependency>
 
         <!-- mysql -->
-        <dependency>
+        <!--<dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.38</version>
-        </dependency>
+        </dependency>-->
 
 
     </dependencies>
