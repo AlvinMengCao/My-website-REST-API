@@ -2,6 +2,7 @@ package dao;
 
 import api.WebSiteComment;
 import com.google.gson.Gson;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -57,5 +58,29 @@ public class WebSiteCommentDAOTest {
         WebSiteComment w = webSiteCommentDAO.getLast();
         Assert.assertNotNull(w);
         System.out.println(gson.toJson(w));
+    }
+
+    @Test
+    public void testUpdate() throws Exception {
+        WebSiteComment w = webSiteCommentDAO.update(1, "new email", "new comment");
+        Assert.assertNotNull(w);
+        Assert.assertTrue("new email".equals(w.getEmail()));
+        Assert.assertTrue("new comment".equals(w.getComment()));
+    }
+
+    @After
+    public void tearDown(){
+        webSiteCommentDAO = null;
+        gson = null;
+    }
+
+    @Test
+    public void testDeleteComment() throws Exception {
+        int before = webSiteCommentDAO.getSize();
+        webSiteCommentDAO.deleteComment(24);
+        int after = webSiteCommentDAO.getSize();
+        WebSiteComment n = webSiteCommentDAO.getSingle(1);
+        //Assert.assertNull(n);
+        //Assert.assertEquals(1, before - after);
     }
 }
