@@ -8,26 +8,11 @@
     <artifactId>My_Website</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
-
-        <!-- junit -->
+        <!-- assertj -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
-
-        <!--dropwizard-->
-        <dependency>
-            <groupId>io.dropwizard</groupId>
-            <artifactId>dropwizard-core</artifactId>
-            <version>0.9.2</version>
-        </dependency>
-
-        <!--hibernate-->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>5.1.0.Final</version>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>2.3.0</version>
         </dependency>
 
         <!-- c3p0 -->
@@ -44,6 +29,20 @@
             <version>9.1-901-1.jdbc4</version>
         </dependency>
 
+        <!-- dropwizard test -->
+        <dependency>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-testing</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+
+        <!--dropwizard-->
+        <dependency>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-core</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+
         <!-- Gson -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -58,23 +57,26 @@
             <version>2.0.0.0</version>
         </dependency>
 
-        <!-- dropwizard test -->
+        <!--hibernate-->
         <dependency>
-            <groupId>io.dropwizard</groupId>
-            <artifactId>dropwizard-testing</artifactId>
-            <version>0.9.2</version>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.1.0.Final</version>
         </dependency>
 
+        <!-- junit -->
         <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId>
-            <version>2.3.0</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
         </dependency>
 
-
-
-
-
+        <!-- mysql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
 
 
     </dependencies>

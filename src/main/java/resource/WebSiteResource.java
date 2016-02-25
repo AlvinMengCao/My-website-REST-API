@@ -12,27 +12,31 @@ import java.util.concurrent.atomic.AtomicLong;
 @Produces(MediaType.APPLICATION_JSON)
 public class WebSiteResource {
 
-    /*private final  String template;
-    private final String defaultName;
-    private final AtomicLong counter;
-
-
-
-    public WebSiteResource(String template, String defaultName) {
-        this.template = template;
-        this.defaultName = defaultName;
-        this.counter = new AtomicLong();
-    }*/
-
     public WebSiteResource() {
     }
 
     @GET
+    @Path("/comment")
     public WebSiteComment getComment(){
         WebSiteCommentDAO webSiteCommentDAO = new WebSiteCommentDAO();
         return webSiteCommentDAO.getSingle(1);
     }
 
+    @GET
+    @Path("/comments")
+    public WebSiteComment getComments(){
+        WebSiteCommentDAO webSiteCommentDAO = new WebSiteCommentDAO();
+        return webSiteCommentDAO.getSingle(2);
+    }
+
+    @POST
+    @Path("/comment")
+    public WebSiteComment putComment(@QueryParam("email") String email, @QueryParam("comment") String comment){
+        WebSiteCommentDAO webSiteCommentDAO = new WebSiteCommentDAO();
+        webSiteCommentDAO.addComment(email,comment);
+        System.out.println(123);
+        return webSiteCommentDAO.getLast();
+    }
 
 
 

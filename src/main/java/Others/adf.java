@@ -13,6 +13,6 @@ public class adf {
 
         Gson gson = new Gson();
         WebSiteResource webSiteResource = new WebSiteResource();
-        System.out.println(gson.toJson(webSiteResource.getComment()));
+        System.out.println(gson.toJson(webSiteResource.putComment("adg","ddd")));
     }
 }
