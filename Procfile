@@ -1,1 +1,1 @@
-web: java -jar target/My_Website-1.0-SNAPSHOT.jar server app.yml
+web: java -jar target/My_Website-1.0-SNAPSHOT.jar server target/classes/app.yml
