@@ -5,54 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="577bb8e5-71c2-48c4-bb11-26addb7be6e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/api/Status.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/core/main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dao/StatusDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pojo/StatusPOJO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resource/StatusResource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/dao/StatusDAOTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_commons_3_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_tree_3_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_11_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts2_core_2_3_24_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_xwork_xwork_core_2_3_24_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_22.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__postgresql_postgresql_9_1_901_1_jdbc4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/My_Website-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/Me.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/api/WebSiteComment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/core/ApplicationConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/core/MyApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dao/CommonDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dao/HibernateUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/health/WebSiteCommentCheck.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/pojo/WebSiteCommentPOJO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/resource/WebSiteResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/original-My_Website-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-dao.CommonDAOTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/dao.CommonDAOTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/dao/CommonDAOTest.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dao/CommonDAO.java" afterPath="$PROJECT_DIR$/src/main/java/dao/WebsiteCommentDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/dao/CommonDAOTest.java" afterPath="$PROJECT_DIR$/src/test/java/dao/WebsiteCommentDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/api/Blog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dao/BlogDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pojo/BlogPOJO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resource/BlogResource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/dao/BlogDAOTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/api/Me.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API.iml" afterPath="$PROJECT_DIR$/API.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/MyApplication.java" afterPath="$PROJECT_DIR$/src/main/java/core/MyApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/HibernateUtils.java" afterPath="$PROJECT_DIR$/src/main/java/dao/HibernateUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pojo/WebSiteCommentPOJO.java" afterPath="$PROJECT_DIR$/src/main/java/pojo/WebSiteCommentPOJO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resource/WebSiteResource.java" afterPath="$PROJECT_DIR$/src/main/java/resource/WebSiteResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
     </list>
     <ignored path="API.iws" />
@@ -76,7 +36,95 @@
     <favorites_list name="API" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="Blog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/Blog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+              <folding>
+                <element signature="e#401#402#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#504#505#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/core/MyApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogResource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resource/BlogResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/BlogDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.457143">
+              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatusResource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resource/StatusResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebSiteResource.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resource/WebSiteResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16883117">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -98,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/core/ApplicationConfiguration.java" />
         <option value="$PROJECT_DIR$/app.yml" />
         <option value="$PROJECT_DIR$/src/main/java/core/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/WebSiteComment.java" />
@@ -138,13 +185,18 @@
         <option value="$PROJECT_DIR$/src/main/java/pojo/Status.java" />
         <option value="$PROJECT_DIR$/src/main/java/pojo/StatusPOJO.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/StatusDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/StatusDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/WebsiteCommentDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/WebsiteCommentDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/core/MyApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/resource/WebSiteResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/resource/StatusResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/Blog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pojo/BlogPOJO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/StatusDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/dao/BlogDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/BlogDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/MyApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resource/BlogResource.java" />
       </list>
     </option>
   </component>
@@ -171,9 +223,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -219,20 +271,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="API" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="API" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,11 +289,261 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files" />
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
     </panes>
   </component>
@@ -296,8 +584,8 @@
       <recent name="dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WebsiteCommentDAOTest">
-    <configuration default="false" name="StatusDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BlogDAOTest">
+    <configuration default="false" name="WebsiteCommentDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="dao.*" />
@@ -308,7 +596,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.StatusDAOTest" />
+      <option name="MAIN_CLASS_NAME" value="dao.WebsiteCommentDAOTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -323,7 +611,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="StatusDAOTest.testGetDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="BlogDAOTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="dao.*" />
@@ -334,8 +622,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.StatusDAOTest" />
-      <option name="METHOD_NAME" value="testGetDelete" />
+      <option name="MAIN_CLASS_NAME" value="dao.BlogDAOTest" />
+      <option name="METHOD_NAME" value="testAdd" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -349,7 +637,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="WebsiteCommentDAOTest.testAddComment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="BlogDAOTest.testAddGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="dao.*" />
@@ -360,8 +648,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.WebsiteCommentDAOTest" />
-      <option name="METHOD_NAME" value="testAddComment" />
+      <option name="MAIN_CLASS_NAME" value="dao.BlogDAOTest" />
+      <option name="METHOD_NAME" value="testAddGet" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -375,7 +663,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="WebsiteCommentDAOTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="BlogDAOTest.testUpdateDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="dao.*" />
@@ -386,8 +674,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.WebsiteCommentDAOTest" />
-      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="MAIN_CLASS_NAME" value="dao.BlogDAOTest" />
+      <option name="METHOD_NAME" value="testUpdateDelete" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -401,7 +689,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="WebsiteCommentDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="BlogDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="dao.*" />
@@ -412,7 +700,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.WebsiteCommentDAOTest" />
+      <option name="MAIN_CLASS_NAME" value="dao.BlogDAOTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -850,19 +1138,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.StatusDAOTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.StatusDAOTest.testGetDelete" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.WebsiteCommentDAOTest.testAddComment" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.WebsiteCommentDAOTest.testUpdate" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WebsiteCommentDAOTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.WebsiteCommentDAOTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BlogDAOTest.testAdd" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BlogDAOTest.testAddGet" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BlogDAOTest.testUpdateDelete" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BlogDAOTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WebsiteCommentDAOTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.WebsiteCommentDAOTest.testUpdate" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.WebsiteCommentDAOTest.testAddComment" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.StatusDAOTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.StatusDAOTest.testGetDelete" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BlogDAOTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BlogDAOTest.testUpdateDelete" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BlogDAOTest.testAddGet" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BlogDAOTest.testAdd" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.WebsiteCommentDAOTest" />
       </list>
     </recent_temporary>
   </component>
@@ -892,44 +1180,46 @@
       <workItem from="1456429913404" duration="578000" />
       <workItem from="1456430737259" duration="99000" />
       <workItem from="1456430910714" duration="9093000" />
-      <workItem from="1456448112703" duration="16259000" />
+      <workItem from="1456448112703" duration="17026000" />
+      <workItem from="1456495950150" duration="107000" />
+      <workItem from="1456496072577" duration="3268000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StatusDAOTest - 2016.02.26 at 00h 04m 55s.xml">
-      <configuration name="StatusDAOTest" configurationId="JUnit" />
+    <history-entry file="BlogDAOTest - 2016.02.26 at 09h 46m 35s.xml">
+      <configuration name="BlogDAOTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StatusDAOTest - 2016.02.26 at 00h 09m 55s.xml">
-      <configuration name="StatusDAOTest" configurationId="JUnit" />
+    <history-entry file="BlogDAOTest_testAdd - 2016.02.26 at 09h 34m 51s.xml">
+      <configuration name="BlogDAOTest.testAdd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StatusDAOTest_testDeleteLast - 2016.02.26 at 00h 04m 39s.xml">
-      <configuration name="StatusDAOTest.testDeleteLast" configurationId="JUnit" />
+    <history-entry file="BlogDAOTest_testAdd - 2016.02.26 at 09h 35m 13s.xml">
+      <configuration name="BlogDAOTest.testAdd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StatusDAOTest_testGetDelete - 2016.02.26 at 00h 07m 37s.xml">
-      <configuration name="StatusDAOTest.testGetDelete" configurationId="JUnit" />
+    <history-entry file="BlogDAOTest_testAdd - 2016.02.26 at 09h 35m 37s.xml">
+      <configuration name="BlogDAOTest.testAdd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StatusDAOTest_testGetDelete - 2016.02.26 at 00h 08m 49s.xml">
-      <configuration name="StatusDAOTest.testGetDelete" configurationId="JUnit" />
+    <history-entry file="BlogDAOTest_testAdd - 2016.02.26 at 09h 36m 02s.xml">
+      <configuration name="BlogDAOTest.testAdd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StatusDAOTest_testGetDelete - 2016.02.26 at 00h 09m 39s.xml">
-      <configuration name="StatusDAOTest.testGetDelete" configurationId="JUnit" />
+    <history-entry file="BlogDAOTest_testAdd - 2016.02.26 at 09h 36m 49s.xml">
+      <configuration name="BlogDAOTest.testAdd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebsiteCommentDAOTest - 2016.02.26 at 00h 15m 29s.xml">
-      <configuration name="WebsiteCommentDAOTest" configurationId="JUnit" />
+    <history-entry file="BlogDAOTest_testAddGet - 2016.02.26 at 09h 40m 48s.xml">
+      <configuration name="BlogDAOTest.testAddGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebsiteCommentDAOTest - 2016.02.26 at 00h 16m 26s.xml">
-      <configuration name="WebsiteCommentDAOTest" configurationId="JUnit" />
+    <history-entry file="BlogDAOTest_testAddGet - 2016.02.26 at 09h 42m 52s.xml">
+      <configuration name="BlogDAOTest.testAddGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebsiteCommentDAOTest_testAddComment - 2016.02.26 at 00h 12m 10s.xml">
-      <configuration name="WebsiteCommentDAOTest.testAddComment" configurationId="JUnit" />
+    <history-entry file="BlogDAOTest_testUpdateDelete - 2016.02.26 at 09h 46m 04s.xml">
+      <configuration name="BlogDAOTest.testUpdateDelete" configurationId="JUnit" />
     </history-entry>
     <history-entry file="WebsiteCommentDAOTest_testUpdate - 2016.02.26 at 00h 13m 19s.xml">
       <configuration name="WebsiteCommentDAOTest.testUpdate" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73780000" />
+    <option name="totallyTimeSpent" value="77922000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -941,15 +1231,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="false" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13555788" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16579771" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1020,42 +1310,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/WebSiteComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/WebsiteCommentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dao/WebsiteCommentDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#setUp#0;class#WebsiteCommentDAOTest#0" expanded="false" />
-            <element signature="method#testAddComment#0;class#WebsiteCommentDAOTest#0" expanded="false" />
-            <element signature="method#testGetSingle#0;class#WebsiteCommentDAOTest#0" expanded="false" />
-            <element signature="method#testGetAll#0;class#WebsiteCommentDAOTest#0" expanded="false" />
-            <element signature="method#testUpdate#0;class#WebsiteCommentDAOTest#0" expanded="false" />
-            <element signature="method#tearDown#0;class#WebsiteCommentDAOTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/WebSiteCommentPOJO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/WebSiteComment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1260,13 +1514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/Me.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6786297">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/ApplicationConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.962963">
@@ -1299,7 +1546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34796748">
           <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,7 +1553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34796748">
           <caret line="309" column="0" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1315,11 +1560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3565217">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1327,7 +1567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3398693">
           <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1350,31 +1589,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/StatusPOJO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60456276">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/Status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33229813">
           <caret line="833" column="0" selection-start-line="833" selection-start-column="0" selection-end-line="833" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1382,7 +1600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="103" column="5" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1401,67 +1618,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pojo/WebSiteCommentPOJO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04942966">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dao/StatusDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2851712">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setUp#0;class#StatusDAOTest#0" expanded="false" />
-            <element signature="method#testAddAddwithdateGetsize#0;class#StatusDAOTest#0" expanded="false" />
-            <element signature="method#testUpdate#0;class#StatusDAOTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/StatusDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3193916">
-          <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addStatus#0;class#StatusDAO#0" expanded="false" />
-            <element signature="method#addStatusWithDate#0;class#StatusDAO#0" expanded="false" />
-            <element signature="method#getSize#0;class#StatusDAO#0" expanded="false" />
-            <element signature="method#getSingle#0;class#StatusDAO#0" expanded="false" />
-            <element signature="method#getLast#0;class#StatusDAO#0" expanded="false" />
-            <element signature="method#getAll#0;class#StatusDAO#0" expanded="false" />
-            <element signature="method#update#0;class#StatusDAO#0" expanded="false" />
-            <element signature="method#delete#0;class#StatusDAO#0" expanded="false" />
-            <element signature="method#deleteLast#0;class#StatusDAO#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resource/StatusResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1469,24 +1629,146 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.83840305">
           <caret line="29" column="17" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resource/WebSiteResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/Status.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="24" />
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/StatusPOJO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88481677">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+        <state vertical-scroll-proportion="-11.457143">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dao/BlogDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4751553">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/BlogPOJO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48447204">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dao/StatusDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.574026">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/StatusDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/Blog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding>
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/BlogDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resource/BlogResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resource/StatusResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resource/WebSiteResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16883117">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="24" />
           <folding />
         </state>
       </provider>
