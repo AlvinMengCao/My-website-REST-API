@@ -7,7 +7,7 @@ import java.util.Date;
  * Created by alvin on 2/24/16.
  */
 @Entity
-@Table(name="website_comment")
+@Table(name = "website_comment")
 public class WebSiteCommentPOJO {
 
     @Id

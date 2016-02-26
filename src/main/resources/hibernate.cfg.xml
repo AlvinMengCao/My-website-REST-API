@@ -9,38 +9,31 @@
 
         <!-- hibernate connection configuration -->
         <property name="connection.url">
-            jdbc:postgresql://ec2-54-227-245-197.compute-1.amazonaws.com:5432/d78opdskpgrjg9?sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;ssl=true
+            jdbc:mysql://l3855uft9zao23e2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/fextr4ft0kmxrro3
+
+
         </property>
         <property name="connection.driver_class">
-            org.postgresql.Driver
+            com.mysql.jdbc.Driver
         </property>
-        <property name="connection.username">lwyrfiszzykoeu</property>
-        <property name="connection.password">Ig_PevjFOGC5KF3bOHfdR88Tuu</property>
+        <property name="connection.username">jxww10guo5fcaxnt</property>
+        <property name="connection.password">vae5ikna2lyl613m</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <!-- hibernate performance configuration -->
-        <property name="dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+        <property name="acquireIncrement">1</property>
+        <property name="c3p0.max_size">3</property>
+        <property name="c3p0.min_size">0</property>
         <property name="format_sql">true</property>
         <property name="hbm2ddl.auto">update</property>
-        <property name="hibernate.temp.use_jdbc_metadata_defaults">false</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="maxIdleTime">10</property>
         <property name="show_sql">true</property>
-
-        <!-- c3p0 configuration -->
-        <property name="c3p0.acquire_increment">1</property>
-        <property name="c3p0.idle_test_period">10</property>
-        <property name="c3p0.max_statements">3</property>
-        <property name="c3p0.max_size">2</property>
-        <property name="c3p0.min_size">1</property>
-        <property name="c3p0.timeout">90</property>
-        <property name="transaction.auto_close_session">true</property>
-        <property name="idleConnectionTestPeriod">60</property>
-        <property name="maxIdleTime">30</property>
-
-
-
 
 
         <!-- presistance objects -->
         <mapping class="pojo.WebSiteCommentPOJO"/>
+        <mapping class="pojo.StatusPOJO"/>
 
     </session-factory>
 </hibernate-configuration>
