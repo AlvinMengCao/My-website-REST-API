@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by alvin on 2/26/16.
  */
-public class BlogDAO {
+public class BlogDAO extends DAOBase{
 
     //has test case, won't pollute data
     public void addBlog(String title, String url){
@@ -33,15 +33,6 @@ public class BlogDAO {
     }
 
     //has test case, won't pollute data
-    public int getSize(){
-        Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
-        ss.beginTransaction();
-        int count = ((Long) ss.createQuery("select count(*) from BlogPOJO").uniqueResult()).intValue();
-        ss.getTransaction().commit();
-        return count;
-    }
-
-    //has test case, won't pollute data
     public Blog getSingle(int id) {
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
@@ -51,21 +42,12 @@ public class BlogDAO {
     }
 
     //has test case, won't pollute data
-    public Blog getLast(){
+    public Blog getLast(String pojo){
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
-        BlogPOJO b = (BlogPOJO) ss.createQuery("from BlogPOJO ORDER BY id DESC").setMaxResults(1).uniqueResult();
+        BlogPOJO b = (BlogPOJO) ss.createQuery("from "+pojo+" ORDER BY id DESC").setMaxResults(1).uniqueResult();
         ss.getTransaction().commit();
         return new Blog(b.getId(), b.getTitle(), b.getUrl());
-    }
-
-    //has test case, won't pollute data
-    public List getAll(){
-        Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
-        ss.beginTransaction();
-        List list = ss.createCriteria(BlogPOJO.class).list();
-        ss.getTransaction().commit();
-        return list;
     }
 
     //has test case, won't pollute data
@@ -81,20 +63,9 @@ public class BlogDAO {
         return new Blog(b.getId(), b.getTitle(), b.getUrl());
     }
 
-    //has test case, won't pollute data
-    public void delete(int id){
-        Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
-        ss.beginTransaction();
-        Query query = ss.createQuery("delete from BlogPOJO where id=?");
-        query.setInteger(0, id);
-        query.executeUpdate();
-        ss.getTransaction().commit();
-    }
-
-    //has test case, won't pollute data
     public void deleteLast(){
         BlogDAO blogDAO = new BlogDAO();
-        int last = blogDAO.getLast().getId();
+        int last = blogDAO.getLast("BlogPOJO").getId();
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
         Query query = ss.createQuery("delete from BlogPOJO where id=?");
@@ -102,6 +73,4 @@ public class BlogDAO {
         query.executeUpdate();
         ss.getTransaction().commit();
     }
-
-
 }

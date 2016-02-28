@@ -13,7 +13,7 @@ public class BlogPOJO {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     private String title;
     private String url;
     private Date date;

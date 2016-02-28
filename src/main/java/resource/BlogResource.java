@@ -2,6 +2,7 @@ package resource;
 
 import api.Blog;
 import dao.BlogDAO;
+import pojo.POJO;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -28,13 +29,13 @@ public class BlogResource {
 
     @GET
     public List getAll(){
-        return blogDAO.getAll();
+        return blogDAO.getAll(POJO.BlogPOJO.toString());
     }
 
     @POST
     public Blog post(@QueryParam("title") String title, @PathParam("url") String url){
         blogDAO.addBlog(title, url);
-        return blogDAO.getLast();
+        return blogDAO.getLast(POJO.BlogPOJO.toString());
     }
 
     @PUT
@@ -46,7 +47,7 @@ public class BlogResource {
     @DELETE
     @Path("/{id}")
     public Response delete(@PathParam("id") int id){
-        blogDAO.delete(id);
+        blogDAO.delete(id, POJO.BlogPOJO.toString());
         return Response.status(200).build();
     }
 

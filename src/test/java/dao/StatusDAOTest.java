@@ -6,6 +6,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import pojo.POJO;
 
 import java.util.Date;
 
@@ -25,10 +26,10 @@ public class StatusDAOTest {
 
     @Test
     public void testAddAddwithdateGetsize(){
-        int before = statusDAO.getSize();
+        int before = statusDAO.getSize(POJO.StatusPOJO.toString());
         statusDAO.addStatus("this is first");
         statusDAO.addStatusWithDate("this is second", new Date());
-        int after = statusDAO.getSize();
+        int after = statusDAO.getSize(POJO.StatusPOJO.toString());
         Assert.assertEquals(2, after - before);
         statusDAO.deleteLast();
         statusDAO.deleteLast();
@@ -36,13 +37,13 @@ public class StatusDAOTest {
 
     @Test
     public void testGetDelete(){
-        int before = statusDAO.getSize();
+        int before = statusDAO.getSize(POJO.StatusPOJO.toString());
         statusDAO.addStatus("for test");
         Status s1 = statusDAO.getLast();
         Status s2 = statusDAO.getSingle(s1.getId());
         Assert.assertEquals(s1.getId(), s2.getId());
         statusDAO.deleteLast();
-        int after = statusDAO.getSize();
+        int after = statusDAO.getSize(POJO.StatusPOJO.toString());
         Assert.assertEquals(0, before - after);
     }
 

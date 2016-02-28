@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by alvin on 2/25/16.
  */
-public class StatusDAO {
+public class StatusDAO extends DAOBase{
 
 
     //has test, won't pollute data
@@ -35,15 +35,6 @@ public class StatusDAO {
     }
 
     //has test, won't pollute data
-    public int getSize(){
-        Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
-        ss.beginTransaction();
-        int count = ((Long) ss.createQuery("select count(*) from StatusPOJO").uniqueResult()).intValue();
-        ss.getTransaction().commit();
-        return count;
-    }
-
-    //has test, won't pollute data
     public Status getSingle(int id) {
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
@@ -61,14 +52,6 @@ public class StatusDAO {
         return new Status(s.getId(), s.getContent(),s.getDate());
     }
 
-    public List getAll(){
-        Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
-        ss.beginTransaction();
-        List list = ss.createCriteria(StatusPOJO.class).list();
-        ss.getTransaction().commit();
-        return list;
-    }
-
     //has test, won't pollute data
     public Status update(int id, String content){
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
@@ -81,17 +64,6 @@ public class StatusDAO {
         return new Status(s.getId(), s.getContent(),s.getDate());
     }
 
-    //has test, won't pollute data
-    public void delete(int id){
-        Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
-        ss.beginTransaction();
-        Query query = ss.createQuery("delete from StatusPOJO where id=?");
-        query.setInteger(0, id);
-        query.executeUpdate();
-        ss.getTransaction().commit();
-    }
-
-
     public void deleteLast(){
         StatusDAO statusDAO = new StatusDAO();
         int last = statusDAO.getLast().getId();
@@ -102,4 +74,5 @@ public class StatusDAO {
         query.executeUpdate();
         ss.getTransaction().commit();
     }
+
 }

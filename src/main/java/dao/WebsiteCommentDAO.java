@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by alvin on 2/24/16.
  */
-public class WebsiteCommentDAO {
+public class WebsiteCommentDAO extends DAOBase{
 
     //has test case
     public void addComment(String email, String comment){
@@ -34,15 +34,6 @@ public class WebsiteCommentDAO {
     }
 
     //has test case, don't need to recover data
-    public int getSize(){
-        Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
-        ss.beginTransaction();
-        int count = ((Long) ss.createQuery("select count(*) from WebSiteCommentPOJO").uniqueResult()).intValue();
-        ss.getTransaction().commit();
-        return count;
-    }
-
-    //has test case, don't need to recover data
     public WebSiteComment getSingle(int id) {
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
@@ -60,15 +51,6 @@ public class WebsiteCommentDAO {
         return new WebSiteComment(w.getId(), w.getComment(), w.getEmail(), w.getDate());
     }
 
-    //has test case, be care of different object type!!
-    public List getAll(){
-        Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
-        ss.beginTransaction();
-        List list = ss.createCriteria(WebSiteCommentPOJO.class).list();
-        ss.getTransaction().commit();
-        return list;
-    }
-
     //has test case
     public WebSiteComment update(int id, String email, String comment){
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
@@ -80,16 +62,6 @@ public class WebsiteCommentDAO {
         ss.save(w);
         ss.getTransaction().commit();
         return new WebSiteComment(w.getId(), w.getComment(), w.getEmail(), w.getDate());
-    }
-
-    //has test case
-    public void delete(int id){
-        Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
-        ss.beginTransaction();
-        Query query = ss.createQuery("delete from WebSiteCommentPOJO where id=?");
-        query.setInteger(0, id);
-        query.executeUpdate();
-        ss.getTransaction().commit();
     }
 
     public void deleteLast(){
