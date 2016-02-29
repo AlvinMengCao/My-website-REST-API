@@ -8,4 +8,4 @@ server:
     -   type: http
         port: 8081
     -   type: https
-        prot: 8444
+        port: 8444
