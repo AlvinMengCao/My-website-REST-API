@@ -1,5 +1,7 @@
 server:
-    type: simple
-    connector:
-      type: http
-      port: 80
+    applicationConnectors:
+    -   type: http
+        port: 8800
+    adminConnectors:
+    -   type: http
+        port: 9800
