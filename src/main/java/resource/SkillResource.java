@@ -17,6 +17,7 @@ public class SkillResource {
     private SkillDAO skillDAO;
 
     public SkillResource() {
+        skillDAO = new SkillDAO();
     }
 
     @GET

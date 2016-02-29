@@ -5,6 +5,7 @@ server:
         port: 8080
 
 
+
 template: Hello, %s!
 
 defaultName: Stranger

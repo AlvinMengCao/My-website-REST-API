@@ -16,6 +16,11 @@ public class MyApplication extends Application<ApplicationConfiguration> {
     }
 
     @Override
+    public String getName(){
+        return "hello-world";
+    }
+
+    @Override
     public void initialize(Bootstrap<ApplicationConfiguration> bootstrap){
 
     }
@@ -29,7 +34,6 @@ public class MyApplication extends Application<ApplicationConfiguration> {
         final StatusResource statusResource = new StatusResource();
         final WebSiteResource websiteresource = new WebSiteResource();
         final WebSiteCommentCheck health = new WebSiteCommentCheck(configuration.getTemplate());
-        environment.healthChecks().register("template", health);
         environment.jersey().register(blogResource);
         environment.jersey().register(skillResource);
         environment.jersey().register(statusResource);

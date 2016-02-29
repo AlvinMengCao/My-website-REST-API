@@ -8,19 +8,30 @@ import org.hibernate.validator.constraints.NotEmpty;
  * Created by alvin on 2/24/16.
  */
 public class ApplicationConfiguration extends Configuration {
+
     @NotEmpty
-    @JsonProperty
     private String template;
 
     @NotEmpty
-    @JsonProperty
     private String defaultName = "Stranger";
 
+    @JsonProperty
     public String getTemplate() {
         return template;
     }
 
+    @JsonProperty
     public String getDefaultName() {
         return defaultName;
+    }
+
+    @JsonProperty
+    public void setTemplate(String template) {
+        this.template = template;
+    }
+
+    @JsonProperty
+    public void setDefaultName(String defaultName) {
+        this.defaultName = defaultName;
     }
 }
