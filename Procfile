@@ -1,1 +1,1 @@
-web: java -Ddw.server.applicationConnectors[0].port=9090 -Ddw.server.adminConnectors[0].port=9091 -jar target/My_Website-1.0-SNAPSHOT.jar --port $PORT server target/classes/app.yml
+web: java -Ddw.server.connector.port=9090 -jar target/My_Website-1.0-SNAPSHOT.jar server target/classes/app.yml
