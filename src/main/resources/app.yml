@@ -1,7 +1,11 @@
 server:
     applicationConnectors:
     -   type: http
-        port: 8800
+        port: 8080
+    -   type: https
+        port: 8843
     adminConnectors:
     -   type: http
-        port: 9800
+        port: 8081
+    -   type: https
+        prot: 8444
