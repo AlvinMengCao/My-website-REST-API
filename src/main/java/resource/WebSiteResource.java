@@ -3,7 +3,7 @@ package resource;
 
 import api.WebSiteComment;
 import dao.WebsiteCommentDAO;
-import pojo.POJO;
+import pojo.POJOs;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -27,7 +27,7 @@ public class WebSiteResource {
 
     @GET
     public List getComments(){
-        return websiteCommentDAO.getAll(POJO.WebSiteCommentPOJO.toString());
+        return websiteCommentDAO.getAll(POJOs.WebSiteCommentPOJO.toString());
     }
 
     @POST
@@ -47,7 +47,7 @@ public class WebSiteResource {
     @DELETE
     @Path("/{id}")
     public Response deleteComment(@PathParam("id") int id){
-        websiteCommentDAO.delete(id, POJO.WebSiteCommentPOJO.toString());
+        websiteCommentDAO.delete(id, POJOs.WebSiteCommentPOJO.toString());
         return Response.status(200).build();
     }
 

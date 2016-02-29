@@ -2,7 +2,7 @@ package resource;
 
 import api.Status;
 import dao.StatusDAO;
-import pojo.POJO;
+import pojo.POJOs;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -28,7 +28,7 @@ public class StatusResource {
 
     @GET
     public List getAll( ){
-        return statusDAO.getAll(POJO.StatusPOJO.toString());
+        return statusDAO.getAll(POJOs.StatusPOJO.toString());
     }
 
     @POST
@@ -46,7 +46,7 @@ public class StatusResource {
     @DELETE
     @Path("/{id}")
     public Response delete (@PathParam("id") int id){
-        statusDAO.delete(id, POJO.StatusPOJO.toString());
+        statusDAO.delete(id, POJOs.StatusPOJO.toString());
         return Response.status(200).build();
     }
 

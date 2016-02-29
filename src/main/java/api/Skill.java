@@ -5,22 +5,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Date;
 
 /**
- * Created by alvin on 2/26/16.
+ * Created by alvin on 2/28/16.
  */
-public class Blog {
+public class Skill {
     private int id;
     private String title;
-    private String url;
-    private Date date;
+    private String content;
 
-    public Blog() {
+
+    public Skill() {
     }
 
-    public Blog(int id, String title, String url,Date date) {
+    public Skill(int id, String title, String content) {
         this.id = id;
         this.title = title;
-        this.url = url;
-        this.date = date;
+        this.content = content;
     }
 
     @JsonProperty
@@ -34,12 +33,8 @@ public class Blog {
     }
 
     @JsonProperty
-    public String getUrl() {
-        return url;
+    public String getContent() {
+        return content;
     }
 
-    @JsonProperty
-    public Date getDate() {
-        return date;
-    }
 }

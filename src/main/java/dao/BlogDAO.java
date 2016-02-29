@@ -38,16 +38,16 @@ public class BlogDAO extends DAOBase{
         ss.beginTransaction();
         BlogPOJO b = ss.get(BlogPOJO.class,id);
         ss.getTransaction().commit();
-        return new Blog(b.getId(), b.getTitle(), b.getUrl());
+        return new Blog(b.getId(), b.getTitle(), b.getUrl(), b.getDate());
     }
 
     //has test case, won't pollute data
-    public Blog getLast(String pojo){
+    public Blog getLast(){
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
-        BlogPOJO b = (BlogPOJO) ss.createQuery("from "+pojo+" ORDER BY id DESC").setMaxResults(1).uniqueResult();
+        BlogPOJO b = (BlogPOJO) ss.createQuery("from BlogPOJO ORDER BY id DESC").setMaxResults(1).uniqueResult();
         ss.getTransaction().commit();
-        return new Blog(b.getId(), b.getTitle(), b.getUrl());
+        return new Blog(b.getId(), b.getTitle(), b.getUrl(), b.getDate());
     }
 
     //has test case, won't pollute data
@@ -60,12 +60,12 @@ public class BlogDAO extends DAOBase{
         b.setDate(new Date());
         ss.save(b);
         ss.getTransaction().commit();
-        return new Blog(b.getId(), b.getTitle(), b.getUrl());
+        return new Blog(b.getId(), b.getTitle(), b.getUrl(), b.getDate());
     }
 
     public void deleteLast(){
         BlogDAO blogDAO = new BlogDAO();
-        int last = blogDAO.getLast("BlogPOJO").getId();
+        int last = blogDAO.getLast().getId();
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
         Query query = ss.createQuery("delete from BlogPOJO where id=?");

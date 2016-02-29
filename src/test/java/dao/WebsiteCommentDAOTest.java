@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import pojo.POJO;
+import pojo.POJOs;
 
 import java.util.List;
 
@@ -28,9 +28,9 @@ public class WebsiteCommentDAOTest {
 
     @Test
     public void testAddComment() throws Exception {
-        int before = websiteCommentDAO.getSize(POJO.WebSiteCommentPOJO.toString());
+        int before = websiteCommentDAO.getSize(POJOs.WebSiteCommentPOJO.toString());
         websiteCommentDAO.addComment("new", "tes!!!!!!!t");
-        int after = websiteCommentDAO.getSize(POJO.WebSiteCommentPOJO.toString());
+        int after = websiteCommentDAO.getSize(POJOs.WebSiteCommentPOJO.toString());
         Assert.assertNotNull(before);
         Assert.assertEquals(1, after - before);
         websiteCommentDAO.deleteLast();
@@ -46,7 +46,7 @@ public class WebsiteCommentDAOTest {
 
     @Test
     public void testGetAll() throws Exception {
-        List result = websiteCommentDAO.getAll(POJO.WebSiteCommentPOJO.toString());
+        List result = websiteCommentDAO.getAll(POJOs.WebSiteCommentPOJO.toString());
         for(Object w:result){
             System.out.println(gson.toJson(w));
         }
@@ -68,8 +68,8 @@ public class WebsiteCommentDAOTest {
     public void testDeleteComment() throws Exception {
         websiteCommentDAO.addComment("for", "f");
         WebSiteComment w= websiteCommentDAO.getLast();
-        websiteCommentDAO.delete((int)w.getId(), POJO.WebSiteCommentPOJO.toString());
-        int after = websiteCommentDAO.getSize(POJO.WebSiteCommentPOJO.toString());
+        websiteCommentDAO.delete((int)w.getId(), POJOs.WebSiteCommentPOJO.toString());
+        int after = websiteCommentDAO.getSize(POJOs.WebSiteCommentPOJO.toString());
     }
 
     @After

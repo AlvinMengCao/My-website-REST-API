@@ -32,9 +32,10 @@
 
 
         <!-- presistance objects -->
-        <mapping class="pojo.WebSiteCommentPOJO"/>
-        <mapping class="pojo.StatusPOJO"/>
         <mapping class="pojo.BlogPOJO"/>
+        <mapping class="pojo.SkillPOJO"/>
+        <mapping class="pojo.StatusPOJO"/>
+        <mapping class="pojo.WebSiteCommentPOJO"/>
 
     </session-factory>
 </hibernate-configuration>
