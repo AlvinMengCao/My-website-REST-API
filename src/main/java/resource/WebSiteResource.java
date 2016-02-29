@@ -21,11 +21,13 @@ public class WebSiteResource {
 
     @GET
     @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
     public WebSiteComment getComment(@PathParam("id") int id){
         return websiteCommentDAO.getSingle(id);
     }
 
     @GET
+    @Produces(MediaType.APPLICATION_JSON)
     public List getComments(){
         return websiteCommentDAO.getAll(POJOs.WebSiteCommentPOJO.toString());
     }
