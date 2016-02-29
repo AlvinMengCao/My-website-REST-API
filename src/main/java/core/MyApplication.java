@@ -33,12 +33,9 @@ public class MyApplication extends Application<ApplicationConfiguration> {
     @Override
     public void run(ApplicationConfiguration configuration, Environment environment){
 
-        FilterRegistration.Dynamic filter = environment.servlets().addFilter("CORSFilter", CrossOriginFilter.class);
-        filter.addMappingForUrlPatterns(EnumSet.of(DispatcherType.REQUEST), false, environment.getApplicationContext().getContextPath()+"*");
-        filter.setInitParameter(CrossOriginFilter.ALLOWED_METHODS_PARAM, "GET,PUT,POST,OPTIONS");
-        filter.setInitParameter(CrossOriginFilter.ALLOWED_ORIGINS_PARAM, "allowed_host");
-        filter.setInitParameter(CrossOriginFilter.ALLOWED_HEADERS_PARAM, "Origin, Content-Type, Accept");
-        filter.setInitParameter(CrossOriginFilter.ALLOW_CREDENTIALS_PARAM, "true");
+        environment.servlets().addFilter("CrossOriginFilter", new CrossOriginFilter())
+                .addMappingForUrlPatterns(EnumSet.of(DispatcherType.REQUEST), true, "/*");
+
 
         final BlogResource blogResource = new BlogResource();
         final SkillResource skillResource = new SkillResource();
