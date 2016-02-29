@@ -3,3 +3,8 @@ server:
     connector:
         type: http
         port: 8080
+
+
+template: Hello, %s!
+
+defaultName: Stranger
