@@ -27,8 +27,10 @@ public class SkillResource {
     }
 
     @GET
-    public List getAll(){
-        return skillDAO.getAll(POJOs.SkillPOJO.toString());
+    public Response getAll(){
+        List list = skillDAO.getAll(POJOs.SkillPOJO.toString());
+        return Response.ok(list).header("Access-Control-Allow-Headers", "Content-Type")
+                .header("Access-Control-Allow-Methods", "GET, POST, OPTIONS").header("Access-Control-Allow-Origin", "*").build();
     }
 
     @POST
