@@ -1,1 +1,1 @@
-web:  java $JAVA_OPTS -Ddw.http.port=$PORT -Ddw.http.adminPort=$PORT -jar target/My_Website-1.0-SNAPSHOT.jar server target/classes/app.yml
+web:  java $JAVA_OPTS -Ddw.http.port=$PORT -Ddw.server.applicationConnectors.port=$PORT -jar target/My_Website-1.0-SNAPSHOT.jar server target/classes/app.yml
