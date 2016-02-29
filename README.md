@@ -6,6 +6,7 @@
 ####Base domain: alvin-api.herokuapp.com/application
 ####Resources: 
 ###### BlogResource(title, url): /blogs
+###### SkillResource(title, content> :/skills
 ###### StatusResource(content): /status 
 ###### WebSiteResource(email, comment): /website-resources
 
