@@ -9,16 +9,16 @@
 
         <!-- hibernate connection configuration -->
         <property name="connection.url">
-            jdbc:mysql://l3855uft9zao23e2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/fextr4ft0kmxrro3
+            jdbc:postgresql://ec2-54-83-3-38.compute-1.amazonaws.com:5432/dd9mbojfq34bkr?sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;ssl=true
 
 
         </property>
         <property name="connection.driver_class">
-            com.mysql.jdbc.Driver
+            org.postgresql.Driver
         </property>
-        <property name="connection.username">jxww10guo5fcaxnt</property>
-        <property name="connection.password">vae5ikna2lyl613m</property>
-        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.username">fsfxblzceuqzfd</property>
+        <property name="connection.password">cafYBw8Ob12srT8ZlSdw79UegQ</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
 
         <!-- hibernate performance configuration -->
         <property name="acquireIncrement">1</property>

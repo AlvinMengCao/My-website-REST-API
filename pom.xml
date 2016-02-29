@@ -16,12 +16,11 @@
         </dependency>
 
         <!-- db connecter -->
-        <!--
         <dependency>
             <groupId>postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>9.1-901-1.jdbc4</version>
-        </dependency>-->
+        </dependency>
 
         <!-- c3p0 -->
         <dependency>
@@ -73,11 +72,11 @@
         </dependency>
 
         <!-- mysql -->
-        <dependency>
+        <!--<dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.38</version>
-        </dependency>
+        </dependency>-->
 
 
     </dependencies>
