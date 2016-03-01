@@ -29,25 +29,21 @@ public class BlogDAOTest {
         int before = blogDAO.getSize(POJOs.BlogPOJO.toString());
         List list = blogDAO.getAll(POJOs.BlogPOJO.toString());
         Assert.assertEquals(before, list.size());
-        blogDAO.addBlog("add", "url");
-        blogDAO.addBlogWithDate("adddd", "add", new Date());
+        blogDAO.addBlog("for test", "for test", "1", "1", "1", "1", "1", "1");
         int after = blogDAO.getSize(POJOs.BlogPOJO.toString());
-        Assert.assertEquals(2, after - before);
+        Assert.assertEquals(1, after - before);
         Blog b1 = blogDAO.getLast();
-        Assert.assertTrue("adddd".equals(b1.getTitle()));
+        Assert.assertTrue("for test".equals(b1.getTitle()));
         Blog b2 = blogDAO.getSingle(b1.getId());
         Assert.assertEquals(b1.getId(), b2.getId());
-        blogDAO.deleteLast();
-        blogDAO.deleteLast();
+
     }
 
     @Test
     public void testUpdateDelete(){
         int before = blogDAO.getSize(POJOs.BlogPOJO.toString());
-        blogDAO.addBlog("for test", "for test");
+        blogDAO.addBlog("for test", "for test", "1", "1", "1", "1", "1", "1");
         int id = blogDAO.getLast().getId();
-        Blog blog = blogDAO.update(id, "new", "new");
-        Assert.assertTrue("new".equals(blog.getTitle()));
         blogDAO.delete(id, POJOs.BlogPOJO.toString());
         int after = blogDAO.getSize(POJOs.BlogPOJO.toString());
         Assert.assertEquals(before, after);

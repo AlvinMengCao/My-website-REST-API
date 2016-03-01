@@ -14,20 +14,11 @@ import java.util.List;
 public class BlogDAO extends DAOBase{
 
     //has test case, won't pollute data
-    public void addBlog(String title, String url){
+    public void addBlog(String title, String url, String tag1, String tag2, String tag3, String tag4,
+    String tag5, String description){
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
-        BlogPOJO blogPOJO = new BlogPOJO(title, url);
-        ss.save(blogPOJO);
-        ss.getTransaction().commit();
-    }
-
-    //has test case, won't pollute data
-    public void addBlogWithDate(String title, String url, Date date){
-        Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
-        ss.beginTransaction();
-        BlogPOJO blogPOJO = new BlogPOJO(title, url);
-        blogPOJO.setDate(date);
+        BlogPOJO blogPOJO = new BlogPOJO(title, url, new Date(), tag1, tag2,tag3, tag4, tag5, description );
         ss.save(blogPOJO);
         ss.getTransaction().commit();
     }
@@ -38,7 +29,9 @@ public class BlogDAO extends DAOBase{
         ss.beginTransaction();
         BlogPOJO b = ss.get(BlogPOJO.class,id);
         ss.getTransaction().commit();
-        return new Blog(b.getId(), b.getTitle(), b.getUrl(), b.getDate());
+        return new Blog(b.getId(), b.getTitle(), b.getUrl(), b.getDate(),
+                b.getDescription(), b.getTag1(), b.getTag2(), b.getTag3(),
+                b.getTag4(), b.getTag5());
     }
 
     //has test case, won't pollute data
@@ -47,30 +40,9 @@ public class BlogDAO extends DAOBase{
         ss.beginTransaction();
         BlogPOJO b = (BlogPOJO) ss.createQuery("from BlogPOJO ORDER BY id DESC").setMaxResults(1).uniqueResult();
         ss.getTransaction().commit();
-        return new Blog(b.getId(), b.getTitle(), b.getUrl(), b.getDate());
+        return new Blog(b.getId(), b.getTitle(), b.getUrl(), b.getDate(),
+                b.getDescription(), b.getTag1(), b.getTag2(), b.getTag3(),
+                b.getTag4(), b.getTag5());
     }
 
-    //has test case, won't pollute data
-    public Blog update(int id, String title, String url){
-        Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
-        ss.beginTransaction();
-        BlogPOJO b = ss.get(BlogPOJO.class,id);
-        b.setTitle(title);
-        b.setUrl(url);
-        b.setDate(new Date());
-        ss.save(b);
-        ss.getTransaction().commit();
-        return new Blog(b.getId(), b.getTitle(), b.getUrl(), b.getDate());
-    }
-
-    public void deleteLast(){
-        BlogDAO blogDAO = new BlogDAO();
-        int last = blogDAO.getLast().getId();
-        Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
-        ss.beginTransaction();
-        Query query = ss.createQuery("delete from BlogPOJO where id=?");
-        query.setInteger(0, last);
-        query.executeUpdate();
-        ss.getTransaction().commit();
-    }
 }

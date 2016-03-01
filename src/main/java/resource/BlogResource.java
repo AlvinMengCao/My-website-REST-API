@@ -32,29 +32,5 @@ public class BlogResource {
         return blogDAO.getAll(POJOs.BlogPOJO.toString());
     }
 
-    @POST
-    public Blog post(@QueryParam("title") String title, @PathParam("url") String url){
-        blogDAO.addBlog(title, url);
-        return blogDAO.getLast();
-    }
 
-    @PUT
-    @Path("/{id}")
-    public Blog put(@PathParam("id") int id, @QueryParam("title") String title, @QueryParam("url") String url){
-        return blogDAO.update(id, title, url);
-    }
-
-    @DELETE
-    @Path("/{id}")
-    public Response delete(@PathParam("id") int id){
-        blogDAO.delete(id, POJOs.BlogPOJO.toString());
-        return Response.status(200).build();
-    }
-
-    @DELETE
-    @Path("/last")
-    public Response deleteLast(){
-        blogDAO.deleteLast();
-        return Response.status(200).build();
-    }
 }
