@@ -5,8 +5,9 @@ package pojo;
  */
 public enum POJOs {
     BlogPOJO,
+    BlogCommentPOJO,
     SkillPOJO,
     StatusPOJO,
-    WebSiteCommentPOJO;
+    CommentPOJO;
 
 }

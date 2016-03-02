@@ -8,7 +8,7 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "website_comment")
-public class WebSiteCommentPOJO {
+public class CommentPOJO {
 
     @Id
     @Column(name = "id")
@@ -19,10 +19,10 @@ public class WebSiteCommentPOJO {
     private String comment;
     private Date date;
 
-    public WebSiteCommentPOJO() {
+    public CommentPOJO() {
     }
 
-    public WebSiteCommentPOJO(String email, String comment) {
+    public CommentPOJO(String email, String comment) {
         this.email = email;
         this.comment = comment;
         this.date = new Date();

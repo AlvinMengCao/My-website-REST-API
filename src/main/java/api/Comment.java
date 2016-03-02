@@ -9,18 +9,18 @@ import java.util.Date;
  * Created by alvin on 2/24/16.
  */
 
-public class WebSiteComment {
+public class Comment {
 
     private long id;
     private String comment;
     private String email;
     private Date date;
 
-    public WebSiteComment() {
+    public Comment() {
         // for Jackson deserialization
     }
 
-    public WebSiteComment(long id, String comment, String email, Date date) {
+    public Comment(long id, String comment, String email, Date date) {
         this.id = id;
         this.comment = comment;
         this.email = email;

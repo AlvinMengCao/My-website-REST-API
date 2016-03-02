@@ -36,6 +36,8 @@ public class BlogDAOTest {
         Assert.assertTrue("for test".equals(b1.getTitle()));
         Blog b2 = blogDAO.getSingle(b1.getId());
         Assert.assertEquals(b1.getId(), b2.getId());
+        blogDAO.deleteLast();
+
 
     }
 

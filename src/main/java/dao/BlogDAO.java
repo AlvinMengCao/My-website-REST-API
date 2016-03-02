@@ -45,4 +45,15 @@ public class BlogDAO extends DAOBase{
                 b.getTag4(), b.getTag5());
     }
 
+
+    public void deleteLast(){
+        BlogDAO blogDAO = new BlogDAO();
+        int last = blogDAO.getLast().getId();
+        Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
+        ss.beginTransaction();
+        Query query = ss.createQuery("delete from BlogPOJO where id=?");
+        query.setInteger(0, last);
+        query.executeUpdate();
+        ss.getTransaction().commit();
+    }
 }

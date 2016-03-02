@@ -1,24 +1,23 @@
 package dao;
 
-import api.WebSiteComment;
+import api.Comment;
 import org.hibernate.Query;
 import org.hibernate.Session;
-import pojo.WebSiteCommentPOJO;
+import pojo.CommentPOJO;
 
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created by alvin on 2/24/16.
  */
-public class WebsiteCommentDAO extends DAOBase{
+public class CommentDAO extends DAOBase{
 
     //has test case
     public void addComment(String email, String comment){
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
-        WebSiteCommentPOJO webSiteCommentPOJO = new WebSiteCommentPOJO(email, comment);
-        ss.save(webSiteCommentPOJO);
+        CommentPOJO commentPOJO = new CommentPOJO(email, comment);
+        ss.save(commentPOJO);
         ss.getTransaction().commit();
     }
 
@@ -26,50 +25,50 @@ public class WebsiteCommentDAO extends DAOBase{
     public void addCommentWithDate(String email, String comment, Date date){
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
-        WebSiteCommentPOJO webSiteCommentPOJO = new WebSiteCommentPOJO(email, comment);
-        webSiteCommentPOJO.setDate(date);
-        ss.save(webSiteCommentPOJO);
+        CommentPOJO commentPOJO = new CommentPOJO(email, comment);
+        commentPOJO.setDate(date);
+        ss.save(commentPOJO);
         ss.getTransaction().commit();
 
     }
 
     //has test case, don't need to recover data
-    public WebSiteComment getSingle(int id) {
+    public Comment getSingle(int id) {
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
-        WebSiteCommentPOJO w = ss.get(WebSiteCommentPOJO.class,id);
+        CommentPOJO w = ss.get(CommentPOJO.class,id);
         ss.getTransaction().commit();
-        return new WebSiteComment(w.getId(), w.getComment(), w.getEmail(), w.getDate());
+        return new Comment(w.getId(), w.getComment(), w.getEmail(), w.getDate());
     }
 
     //has test case, don't need to recover data
-    public WebSiteComment getLast(){
+    public Comment getLast(){
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
-        WebSiteCommentPOJO w = (WebSiteCommentPOJO) ss.createQuery("from WebSiteCommentPOJO ORDER BY id DESC").setMaxResults(1).uniqueResult();
+        CommentPOJO w = (CommentPOJO) ss.createQuery("from CommentPOJO ORDER BY id DESC").setMaxResults(1).uniqueResult();
         ss.getTransaction().commit();
-        return new WebSiteComment(w.getId(), w.getComment(), w.getEmail(), w.getDate());
+        return new Comment(w.getId(), w.getComment(), w.getEmail(), w.getDate());
     }
 
     //has test case
-    public WebSiteComment update(int id, String email, String comment){
+    public Comment update(int id, String email, String comment){
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
-        WebSiteCommentPOJO w = ss.get(WebSiteCommentPOJO.class,id);
+        CommentPOJO w = ss.get(CommentPOJO.class,id);
         w.setEmail(email);
         w.setComment(comment);
         w.setDate(new Date());
         ss.save(w);
         ss.getTransaction().commit();
-        return new WebSiteComment(w.getId(), w.getComment(), w.getEmail(), w.getDate());
+        return new Comment(w.getId(), w.getComment(), w.getEmail(), w.getDate());
     }
 
     public void deleteLast(){
-        WebsiteCommentDAO websiteCommentDAO = new WebsiteCommentDAO();
-        int last = (int)websiteCommentDAO.getLast().getId();
+        CommentDAO commentDAO = new CommentDAO();
+        int last = (int) commentDAO.getLast().getId();
         Session ss = HibernateUtils.getSessionFactory().getCurrentSession();
         ss.beginTransaction();
-        Query query = ss.createQuery("delete from WebSiteCommentPOJO where id=?");
+        Query query = ss.createQuery("delete from CommentPOJO where id=?");
         query.setInteger(0, last);
         query.executeUpdate();
         ss.getTransaction().commit();
