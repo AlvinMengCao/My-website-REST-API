@@ -3,6 +3,7 @@ Build a remote deploied restful API service with dropwizard. I use this seperate
 
 ##Code Example
 If you have a restful clint test tool, open it, and just simply send a request to `alvin-api.herokuapp.com/application/blogcomments`
+You may need to wait a few seconds since the whole hibernate framework need to be initilized.
 Since you can directly use these api to manipulate my database, so I strongly recommend you just send GET request!
 And you will get all of website comment data in remote database;
 
@@ -29,7 +30,7 @@ CommentResource(email, comment): /comments
 ###### DELETE last:/
 
 ##Tests
-Use TDD to build DAO part of this project, and it already contians Unit test cases for all DAO. And I also manually test all types of request.
+Use TDD to build DAO part of this project, and it already contians Unit test cases for all DAO. And I also manually test all types of request. Gonna add mock test for API and DOA.
 
 ##Contributors
 Since I am not that skillful in deploying to server side, if you guys can help me re-edit the `app.yml` file, which is under java/resource, and put database information and other possible configuration varibles in it, I would be really appreciate.
