@@ -5,6 +5,7 @@ import java.util.Date;
 
 /**
  * Created by alvin on 2/26/16.
+ * 1. Hibernate pojo mapping class is unique, don't use builder here
  */
 @Entity
 @Table(name = "blog")

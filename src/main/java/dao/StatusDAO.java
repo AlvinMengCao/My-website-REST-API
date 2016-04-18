@@ -4,9 +4,7 @@ import api.Status;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import pojo.StatusPOJO;
-
 import java.util.Date;
-import java.util.List;
 
 
 /**

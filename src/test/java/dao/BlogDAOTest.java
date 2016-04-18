@@ -50,4 +50,5 @@ public class BlogDAOTest {
         int after = blogDAO.getSize(tableName);
         Assert.assertEquals(before, after);
     }
+
 }
