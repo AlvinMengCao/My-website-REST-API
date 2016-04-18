@@ -2,18 +2,17 @@ package dao;
 
 import api.Comment;
 import com.google.gson.Gson;
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import pojo.POJOs;
-import service.Singletons;
+import service.GsonInstance;
 
 import java.util.List;
 
 /**
  * Created by alvin on 2/24/16.
- * 1. Do not eliminate DAO & Gson instances!!! They are singletons.
+ * 1. Do not eliminate DAO & GsonInstance instances!!! They are singletons.
  */
 public class CommentDAOTest {
 
@@ -26,7 +25,7 @@ public class CommentDAOTest {
     public void setUp() throws Exception {
         commentDAO = CommentDAO.getCommentDAO();
         tableName = POJOs.CommentPOJO.toString();
-        gson = Singletons.getGson();
+        gson = GsonInstance.INSTANCE.getGson();
     }
 
 

@@ -1,32 +1,30 @@
 package dao;
 
 import api.Status;
-import com.google.gson.Gson;
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import pojo.POJOs;
-import service.Singletons;
+import service.GsonInstance;
 
 import java.util.Date;
 
 /**
  * Created by alvin on 2/25/16.
  * Edit by Alvin on 4/18/16
- * 1.Do not eliminate DAO & Gson instances!!! They are singletons.
+ * 1.Do not eliminate DAO & GsonInstance instances!!! They are singletons.
  * 2.Already null obsolete objects.
  */
 public class StatusDAOTest {
 
     private StatusDAO statusDAO;
-    private Gson gson;
+    private com.google.gson.Gson gson;
     private String tableName;
 
     @Before
     public void setUp() throws Exception {
         statusDAO = StatusDAO.getStatusDAO();
-        gson = Singletons.getGson();
+        gson = GsonInstance.INSTANCE.getGson();
         tableName = POJOs.StatusPOJO.toString();
     }
 

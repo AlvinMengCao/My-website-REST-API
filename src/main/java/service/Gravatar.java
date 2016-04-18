@@ -6,8 +6,10 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * Created by alvin on 3/2/16.
+ * 1. Shouldn't instantiate this object, override default constructor.
  */
 public class Gravatar {
+    private Gravatar(){}
     public static String hex(byte[] array) {
         StringBuffer sb = new StringBuffer();
         for (int i = 0; i < array.length; ++i) {
