@@ -17,7 +17,7 @@ import java.util.List;
 public class StatusResource {
     private StatusDAO statusDAO;
     public StatusResource( ) {
-        statusDAO = new StatusDAO( );
+        statusDAO = StatusDAO.getStatusDAO();
     }
 
     @GET

@@ -1,15 +1,14 @@
 package core;
 
-import dao.BlogDAO;
 import dao.StatusDAO;
-import service.Gravatar;
 
 /**
  * Created by alvin on 2/29/16.
+ * For test, no function related with this project
  */
 public class main {
     public static  void main(String[] args){
-        StatusDAO statusDAO = new StatusDAO();
+        StatusDAO statusDAO = StatusDAO.getStatusDAO();
         statusDAO.addStatus("nihaoma");
     }
 }

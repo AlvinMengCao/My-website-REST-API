@@ -16,7 +16,7 @@ public class CommentResource {
 
     private CommentDAO commentDAO;
     public CommentResource() {
-        commentDAO = new CommentDAO();
+        commentDAO = CommentDAO.getCommentDAO();
     }
 
     @GET

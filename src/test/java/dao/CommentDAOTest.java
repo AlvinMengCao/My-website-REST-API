@@ -7,30 +7,34 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import pojo.POJOs;
+import service.Singletons;
 
 import java.util.List;
 
 /**
  * Created by alvin on 2/24/16.
+ * 1. Do not eliminate DAO & Gson instances!!! They are singletons.
  */
 public class CommentDAOTest {
 
 
     private CommentDAO commentDAO;
+    private String tableName;
     private Gson gson;
 
     @Before
     public void setUp() throws Exception {
-        commentDAO = new CommentDAO();
-        gson = new Gson();
+        commentDAO = CommentDAO.getCommentDAO();
+        tableName = POJOs.CommentPOJO.toString();
+        gson = Singletons.getGson();
     }
 
 
     @Test
     public void testAddComment() throws Exception {
-        int before = commentDAO.getSize(POJOs.CommentPOJO.toString());
+        int before = commentDAO.getSize(tableName);
         commentDAO.addComment("new", "tes!!!!!!!t");
-        int after = commentDAO.getSize(POJOs.CommentPOJO.toString());
+        int after = commentDAO.getSize(tableName);
         Assert.assertNotNull(before);
         Assert.assertEquals(1, after - before);
         commentDAO.deleteLast();
@@ -46,7 +50,7 @@ public class CommentDAOTest {
 
     @Test
     public void testGetAll() throws Exception {
-        List result = commentDAO.getAll(POJOs.CommentPOJO.toString());
+        List result = commentDAO.getAll(tableName);
         for(Object w:result){
             System.out.println(gson.toJson(w));
         }
@@ -68,16 +72,7 @@ public class CommentDAOTest {
     public void testDeleteComment() throws Exception {
         commentDAO.addComment("for", "f");
         Comment w= commentDAO.getLast();
-        commentDAO.delete((int)w.getId(), POJOs.CommentPOJO.toString());
-        int after = commentDAO.getSize(POJOs.CommentPOJO.toString());
+        commentDAO.delete((int)w.getId(), tableName);
+        int after = commentDAO.getSize(tableName);
     }
-
-    @After
-    public void tearDown(){
-        commentDAO = null;
-        gson = null;
-    }
-
-
-
 }

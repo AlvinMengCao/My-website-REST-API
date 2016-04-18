@@ -11,29 +11,33 @@ import static org.junit.Assert.*;
 
 /**
  * Created by alvin on 2/28/16.
+ * 1.Do not eliminate DAO instance;
+ * 2.Already release obsolete objects;
  */
 public class SkillDAOTest {
 
     private SkillDAO skillDAO;
-
+    private String tableName;
 
     @Before
     public void setUp() throws Exception {
-        skillDAO = new SkillDAO();
+        skillDAO = SkillDAO.getSkillDAO();
+        tableName = POJOs.SkillPOJO.toString();
     }
 
     @Test
     public void testAddSkill() throws Exception {
-        int before = skillDAO.getSize(POJOs.SkillPOJO.toString());
+        int before = skillDAO.getSize(tableName);
         skillDAO.addSkill("a", "b");
-        int after = skillDAO.getSize(POJOs.SkillPOJO.toString());
+        int after = skillDAO.getSize(tableName);
         Assert.assertEquals(1, after - before);
         Skill skill = skillDAO.getLast();
         Assert.assertTrue(skill.getContent().equals("b"));
         Assert.assertTrue(skill.getTitle().equals("a"));
         skillDAO.deleteLast();
-        int after_delete = skillDAO.getSize(POJOs.SkillPOJO.toString());
+        int after_delete = skillDAO.getSize(tableName);
         Assert.assertEquals(before, after_delete);
+        skill = null;
     }
 
     @Test
@@ -44,6 +48,7 @@ public class SkillDAOTest {
         Assert.assertTrue(skill.getTitle().equals("a"));
         Assert.assertTrue(skill.getContent().equals("b"));
         skillDAO.deleteLast();
+        skill = null;
     }
 
     @Test
@@ -53,6 +58,7 @@ public class SkillDAOTest {
         Assert.assertTrue(skill.getTitle().equals("a"));
         Assert.assertTrue(skill.getContent().equals("b"));
         skillDAO.deleteLast();
+        skill = null;
     }
 
     @Test
@@ -64,6 +70,7 @@ public class SkillDAOTest {
         Assert.assertTrue(skill.getContent().equals("d"));
         Assert.assertTrue(skill.getTitle().equals("c"));
         skillDAO.deleteLast();
+        skill = null;
     }
 
     @Test
@@ -75,10 +82,7 @@ public class SkillDAOTest {
         Assert.assertTrue(skill.getTitle().equals("a"));
         Assert.assertTrue(skill.getContent().equals("b"));
         skillDAO.deleteLast();
+        skill = null;
     }
 
-    @After
-    public void tearDown(){
-        skillDAO = null;
-    }
 }

@@ -18,7 +18,7 @@ public class BlogResource {
     private BlogDAO blogDAO;
 
     public BlogResource() {
-        blogDAO = new BlogDAO();
+        blogDAO = BlogDAO.getBlogDAO();
     }
 
     @GET

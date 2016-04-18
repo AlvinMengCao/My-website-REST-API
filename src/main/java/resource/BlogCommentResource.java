@@ -17,7 +17,7 @@ public class BlogCommentResource {
     private BlogCommentDAO blogCommentDAO;
 
     public BlogCommentResource() {
-        blogCommentDAO = new BlogCommentDAO();
+        blogCommentDAO = BlogCommentDAO.getBlogCommentDAO();
     }
 
     @GET
