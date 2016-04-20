@@ -16,6 +16,7 @@ import java.util.List;
  * but the methods.
  * 5. protected SessionFactory, ensure subclass can use it.
  * 6. Don't need to null obsolete objects
+ * 7. Do not override methods in this class, don't provide override maintenance.
  * Future work-------------------------------------------------
  * 1. Add generics to getAll method
  */
@@ -23,7 +24,7 @@ import java.util.List;
     //this object is only a collection of method, shouldn't be instantiated
 
     protected final SessionFactory sessionFactory = HibernateUtils.getSessionFactory();
-    public int getSize(String pojo){
+    public final int getSize(String pojo){
         Session ss = sessionFactory.getCurrentSession();
         ss.beginTransaction();
         int count = ((Long) ss.createQuery("select count(*) from "+pojo).uniqueResult()).intValue();
@@ -31,7 +32,7 @@ import java.util.List;
         return count;
     }
 
-    public List getAll(String pojo){
+    public final List getAll(String pojo){
         Session ss = sessionFactory.getCurrentSession();
         ss.beginTransaction();
         List list = ss.createQuery("from "+ pojo).list();
@@ -39,7 +40,7 @@ import java.util.List;
         return list;
     }
 
-    public void delete(int id, String pojo){
+    public final void delete(int id, String pojo){
         Session ss = sessionFactory.getCurrentSession();
         ss.beginTransaction();
         Query query = ss.createQuery("delete from " + pojo + " where id=?");

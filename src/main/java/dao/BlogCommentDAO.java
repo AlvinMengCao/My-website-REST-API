@@ -16,7 +16,7 @@ import java.util.List;
  * 2. All methods are public APIs, use public modifier.
  * 3. Already null obsolete objects.
  */
-public class BlogCommentDAO extends DAOBase{
+public final class BlogCommentDAO extends DAOBase{
     private static final BlogCommentDAO blogCommentDAO = new BlogCommentDAO();
     private BlogCommentDAO(){
 

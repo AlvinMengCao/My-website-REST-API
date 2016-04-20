@@ -16,7 +16,7 @@ import java.util.Date;
  * Future work-------------------------------------------------------------
  * 1. use enum to achieve singleton(maybe, but not sure).
  */
-public class CommentDAO extends DAOBase{
+public final class CommentDAO extends DAOBase{
     private static final CommentDAO commentDAO = new CommentDAO();
     private CommentDAO(){}
 

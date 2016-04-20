@@ -17,7 +17,7 @@ import java.util.List;
  * Future work--------------------------------------------------------
  * 1.Use builder instead of constructor.
  */
-public class BlogDAO extends DAOBase{
+public final class BlogDAO extends DAOBase{
     private static final BlogDAO blogDAO = new BlogDAO();
     private BlogDAO(){}
 

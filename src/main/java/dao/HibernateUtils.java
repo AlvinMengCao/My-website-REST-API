@@ -8,7 +8,7 @@ import org.hibernate.cfg.Configuration;
  * 2. getSessionFactory method is only used within this package, so no modifier.
  * 3. Shouldn't be instantiate, use private constructor to override.
  */
- class HibernateUtils {
+ final class  HibernateUtils {
 
     private static final SessionFactory sessionFactory;
 

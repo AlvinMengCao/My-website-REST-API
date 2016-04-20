@@ -14,7 +14,7 @@ import java.util.Date;
  * 1. Singleton instance of SkillDAO.
  * 2. Already eliminate obsolete object references.
  */
-public class SkillDAO extends DAOBase {
+public final class SkillDAO extends DAOBase {
     private static final SkillDAO skillDAO = new SkillDAO();
     private SkillDAO(){}
 

@@ -13,7 +13,7 @@ import java.util.Date;
  * to achieve this.
  * 2. Already null obsolete objects.
  */
-public class StatusDAO extends DAOBase{
+public final class StatusDAO extends DAOBase{
     private static final StatusDAO statusDAO = new StatusDAO();
     private StatusDAO(){}
 
