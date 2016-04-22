@@ -7,7 +7,7 @@ import pojo.BlogPOJO;
 
 import java.util.List;
 
-/**
+/********************************************************************************************
  * Created by alvin on 2/27/16.
  * 1. This is a class which contains three common DAO method.
  * 2. Shouldn't instantiate this class, use abstract to prevent this.
@@ -19,6 +19,7 @@ import java.util.List;
  * 7. Do not override methods in this class, don't provide override maintenance.
  * Future work-------------------------------------------------
  * 1. Add generics to getAll method
+ * ***********************************************************************************************
  */
   abstract class DAOBase {
     //this object is only a collection of method, shouldn't be instantiated
