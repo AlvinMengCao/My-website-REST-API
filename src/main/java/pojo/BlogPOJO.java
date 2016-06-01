@@ -17,6 +17,7 @@ public class BlogPOJO {
     private Integer id;
     private String title;
     private String url;
+    private Integer percentage;
     private Date date;
 
     private String description;
@@ -127,5 +128,13 @@ public class BlogPOJO {
 
     public void setTag5(String tag5) {
         this.tag5 = tag5;
+    }
+
+    public int getPercentage() {
+        return percentage;
+    }
+
+    public void setPercentage(int percentage) {
+        this.percentage = percentage;
     }
 }

@@ -35,15 +35,9 @@ public class MyApplication extends Application<ApplicationConfiguration> {
 
         final BlogResource blogResource = new BlogResource();
         final BlogCommentResource blogCommentResource = new BlogCommentResource();
-        final SkillResource skillResource = new SkillResource();
-        final StatusResource statusResource = new StatusResource();
-        final CommentResource websiteresource = new CommentResource();
         final WebSiteCommentCheck health = new WebSiteCommentCheck(configuration.getTemplate());
         environment.jersey().register(blogResource);
         environment.jersey().register(blogCommentResource);
-        environment.jersey().register(skillResource);
-        environment.jersey().register(statusResource);
-        environment.jersey().register(websiteresource);
     }
 
 }

@@ -13,6 +13,7 @@ public class Blog {
     private final String title;
     private final String url;
     private final Date date;
+    private final int percentage;
 
     private final String description;
     private final String tag1;
@@ -27,6 +28,7 @@ public class Blog {
         private final String title;
         private final String url;
         private final Date date;
+        private final int percentage;
 
         //optional field, initialized them to default values
         private String description = "no description";
@@ -36,11 +38,12 @@ public class Blog {
         private String tag4 = "tag4";
         private String tag5 = "tag5";
 
-        public Builder(int id, String title, String url, Date date){
+        public Builder(int id, String title, String url, Date date, int percentage){
             this.id = id;
             this.title = title;
             this.url = url;
             this.date = date;
+            this.percentage = percentage;
         }
         public Builder tag1(String val){
             tag1 = val;
@@ -77,6 +80,7 @@ public class Blog {
         title = builder.title;
         url = builder.url;
         date = builder.date;
+        percentage = builder.percentage;
         description = builder.description;
         tag1 = builder.tag1;
         tag2 = builder.tag2;
@@ -133,5 +137,10 @@ public class Blog {
     @JsonProperty
     public String getTag5() {
         return tag5;
+    }
+
+    @JsonProperty
+    public int getPercentage() {
+        return percentage;
     }
 }

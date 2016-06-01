@@ -36,7 +36,7 @@ public final class BlogDAO extends DAOBase{
         ss.beginTransaction();
         BlogPOJO b = ss.get(BlogPOJO.class,id);
         ss.getTransaction().commit();
-        Blog blog = new Blog.Builder(b.getId(), b.getTitle(), b.getUrl(), b.getDate()).tag1(b.getTag1())
+        Blog blog = new Blog.Builder(b.getId(), b.getTitle(), b.getUrl(), b.getDate(), b.getPercentage()).tag1(b.getTag1())
                 .tag2(b.getTag2()).tag3(b.getTag3()).tag4(b.getTag4()).tag5(b.getTag5())
                 .descriptin(b.getDescription()).build();
         b = null;
@@ -50,7 +50,7 @@ public final class BlogDAO extends DAOBase{
         ss.beginTransaction();
         BlogPOJO b = (BlogPOJO) ss.createQuery("from BlogPOJO ORDER BY id DESC").setMaxResults(1).uniqueResult();
         ss.getTransaction().commit();
-        Blog blog = new Blog.Builder(b.getId(), b.getTitle(), b.getUrl(), b.getDate()).tag1(b.getTag1())
+        Blog blog = new Blog.Builder(b.getId(), b.getTitle(), b.getUrl(), b.getDate(), b.getPercentage()).tag1(b.getTag1())
                 .tag2(b.getTag2()).tag3(b.getTag3()).tag4(b.getTag4()).tag5(b.getTag5())
                 .descriptin(b.getDescription()).build();
         b = null;

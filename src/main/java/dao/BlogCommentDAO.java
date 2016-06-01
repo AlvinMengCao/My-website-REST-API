@@ -4,10 +4,6 @@ import api.BlogComment;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import pojo.BlogCommentPOJO;
-import pojo.POJOs;
-import pojo.SkillPOJO;
-
-import java.util.List;
 
 /**
  * Created by alvin on 3/2/16.
