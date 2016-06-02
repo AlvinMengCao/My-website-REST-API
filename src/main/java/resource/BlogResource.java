@@ -15,11 +15,10 @@ import java.util.List;
 @Path("/blogs")
 @Produces(MediaType.APPLICATION_JSON)
 public class BlogResource {
-    private BlogDAO blogDAO;
+    private static final BlogResource blogResource = new BlogResource();
+    private BlogDAO blogDAO = BlogDAO.getBlogDAO();
 
-    public BlogResource() {
-        blogDAO = BlogDAO.getBlogDAO();
-    }
+    private BlogResource() {}
 
     @GET
     @Path("/{id}")
@@ -32,5 +31,8 @@ public class BlogResource {
         return blogDAO.getAll(POJOs.BlogPOJO.toString());
     }
 
+    public static BlogResource getInstance(){
+        return blogResource;
+    }
 
 }

@@ -19,12 +19,14 @@ import java.util.List;
  * 7. Do not override methods in this class, don't provide override maintenance.
  * Future work-------------------------------------------------
  * 1. Add generics to getAll method
- * ***********************************************************************************************
- */
+ * ***********************************************************************************************/
+
   abstract class DAOBase {
     //this object is only a collection of method, shouldn't be instantiated
 
     protected final SessionFactory sessionFactory = HibernateUtils.getSessionFactory();
+
+
     public final int getSize(String pojo){
         Session ss = sessionFactory.getCurrentSession();
         ss.beginTransaction();
@@ -36,7 +38,7 @@ import java.util.List;
     public final List getAll(String pojo){
         Session ss = sessionFactory.getCurrentSession();
         ss.beginTransaction();
-        List list = ss.createQuery("from "+ pojo).list();
+        List list = ss.createQuery("from "+ pojo + " ORDER BY id desc").list();
         ss.getTransaction().commit();
         return list;
     }

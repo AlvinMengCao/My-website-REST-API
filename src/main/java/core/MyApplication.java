@@ -1,6 +1,5 @@
 package core;
 
-import health.WebSiteCommentCheck;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -33,9 +32,8 @@ public class MyApplication extends Application<ApplicationConfiguration> {
                 .addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), true, "/*");
 
 
-        final BlogResource blogResource = new BlogResource();
-        final BlogCommentResource blogCommentResource = new BlogCommentResource();
-        final WebSiteCommentCheck health = new WebSiteCommentCheck(configuration.getTemplate());
+        final BlogResource blogResource = BlogResource.getInstance();
+        final BlogCommentResource blogCommentResource = BlogCommentResource.getInstance();
         environment.jersey().register(blogResource);
         environment.jersey().register(blogCommentResource);
     }

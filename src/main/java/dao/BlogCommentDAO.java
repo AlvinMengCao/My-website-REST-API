@@ -5,6 +5,8 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import pojo.BlogCommentPOJO;
 
+import java.util.Date;
+
 /**
  * Created by alvin on 3/2/16.
  * 1. Singleton instance, use private static final field, factory method and private constructor
@@ -20,7 +22,7 @@ public final class BlogCommentDAO extends DAOBase{
     public void add(String url, String comment, String name){
         Session ss = sessionFactory.getCurrentSession();
         ss.beginTransaction();
-        BlogCommentPOJO blogCommentPOJO = new BlogCommentPOJO(name, comment, url);
+        BlogCommentPOJO blogCommentPOJO = new BlogCommentPOJO.Builder(url, comment, name, new Date()).build();
         ss.save(blogCommentPOJO);
         ss.getTransaction().commit();
         blogCommentPOJO = null;

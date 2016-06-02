@@ -3,7 +3,6 @@ package resource;
 import dao.BlogCommentDAO;
 import pojo.POJOs;
 import service.Gravatar;
-
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
@@ -14,12 +13,13 @@ import java.util.List;
 @Path("/blogcomments")
 @Produces(MediaType.APPLICATION_JSON)
 public class BlogCommentResource {
-    private BlogCommentDAO blogCommentDAO;
+    private static final BlogCommentResource blogCommentResource = new BlogCommentResource();
+    private BlogCommentDAO blogCommentDAO = BlogCommentDAO.getBlogCommentDAO();;
 
-    public BlogCommentResource() {
-        blogCommentDAO = BlogCommentDAO.getBlogCommentDAO();
-    }
+    private BlogCommentResource() {}
 
+
+    //获取所有评论内容
     @GET
     public List getAll(){
         return blogCommentDAO.getAll(POJOs.BlogCommentPOJO.toString());
@@ -32,5 +32,7 @@ public class BlogCommentResource {
         return blogCommentDAO.getAll(POJOs.BlogCommentPOJO.toString());
     }
 
-
+    public static BlogCommentResource getInstance(){
+        return blogCommentResource;
+    }
 }

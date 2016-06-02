@@ -31,7 +31,7 @@ public class BlogDAOTest {
         int before = blogDAO.getSize(tableName);
         List list = blogDAO.getAll(tableName);
         Assert.assertEquals(before, list.size());
-        blogDAO.addBlog("for test", "for test", "1", "1", "1", "1", "1", "1");
+        blogDAO.addBlog("for test", "for test", "1", "1", "1", "1", "1", "1", 1);
         int after = blogDAO.getSize(tableName);
         Assert.assertEquals(1, after - before);
         Blog b1 = blogDAO.getLast();
@@ -44,7 +44,7 @@ public class BlogDAOTest {
     @Test
     public void testUpdateDelete(){
         int before = blogDAO.getSize(tableName);
-        blogDAO.addBlog("for test", "for test", "1", "1", "1", "1", "1", "1");
+        blogDAO.addBlog("for test", "for test", "1", "1", "1", "1", "1", "1", 1);
         int id = blogDAO.getLast().getId();
         blogDAO.delete(id, tableName);
         int after = blogDAO.getSize(tableName);

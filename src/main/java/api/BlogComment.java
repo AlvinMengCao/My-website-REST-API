@@ -14,8 +14,6 @@ public class BlogComment {
     private Date date;
     private String name;
 
-    public BlogComment() {
-    }
 
     public BlogComment(int id, String url, String comment, Date date, String name) {
         this.id = id;

@@ -4,6 +4,7 @@ import api.Blog;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import pojo.BlogPOJO;
+import pojo.POJOs;
 
 import java.util.Date;
 import java.util.List;
@@ -21,14 +22,21 @@ public final class BlogDAO extends DAOBase{
     private static final BlogDAO blogDAO = new BlogDAO();
     private BlogDAO(){}
 
-    public void addBlog(String title, String url, String tag1, String tag2, String tag3, String tag4,
-    String tag5, String description){
+    /**
+     * 生产环境中用不到这个功能，都是数据库直接添加的。主要为了测试。
+     */
+    public List<Blog> addBlog(String title, String url, String tag1, String tag2, String tag3, String tag4,
+    String tag5, String description, int percentage){
         Session ss = sessionFactory.getCurrentSession();
         ss.beginTransaction();
-        BlogPOJO blogPOJO = new BlogPOJO(title, url, new Date(), tag1, tag2,tag3, tag4, tag5, description );
+
+        BlogPOJO blogPOJO = new BlogPOJO.Builder(title, url, percentage, new Date()).tag1(tag1).tag2(tag2).tag3(tag3)
+                .tag4(tag4).tag5(tag5).description(description).build();
+
         ss.save(blogPOJO);
         ss.getTransaction().commit();
         blogPOJO = null;
+        return blogDAO.getAll(POJOs.BlogPOJO.toString());
     }
 
     public Blog getSingle(int id) {

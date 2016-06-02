@@ -22,6 +22,7 @@ public class Blog {
     private final String tag4;
     private final String tag5;
 
+    //构建器
     public static class Builder{
         //required fields
         private final int id;
