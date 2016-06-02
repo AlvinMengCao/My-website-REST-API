@@ -33,8 +33,6 @@ public class BlogPOJO {
     private String tag4;
     private String tag5;
 
-    private volatile int hashCode;
-
     /***********************************************************************************
      * 此无参数构造器必须提供，Hibernate的Constructor.newInstance()会用这个来创建，至少是包可见
      **********************************************************************************/
@@ -103,12 +101,6 @@ public class BlogPOJO {
     }
 
     //架构会用到的setter与getter们
-    public int getHashCode() {
-        return hashCode;
-    }
-    public void setHashCode(int hashCode) {
-        this.hashCode = hashCode;
-    }
     public String getDescription() {
         return description;
     }
@@ -205,13 +197,10 @@ public class BlogPOJO {
      ************************************************************************/
     @Override
     public int hashCode() {
-        int result = hashCode;
-        if (result == 0){
-            result = 31 * result + percentage;
-            result = 31 * result + url.hashCode();
-            result = 31 * result + title.hashCode();
-            return result;
-        }
+        int result = 17;
+        result = 31 * result + percentage;
+        result = 31 * result + url.hashCode();
+        result = 31 * result + title.hashCode();
         return result;
     }
 

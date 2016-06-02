@@ -18,13 +18,11 @@ public class BlogCommentPOJO {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     private String url;
     private String comment;
     private String name;
     private Date date;
-
-    private volatile int hashCode;
 
     /****************************************************************************/
     //无参构造器，架构会用到
@@ -55,12 +53,15 @@ public class BlogCommentPOJO {
     }
 
     //架构会用到的setter与getter们
-    public int getId() {
+    public Integer getId() {
+
         return id;
     }
-    public void setId(int id) {
+
+    public void setId(Integer id) {
         this.id = id;
     }
+
     public String getUrl() {
         return url;
     }
@@ -113,13 +114,10 @@ public class BlogCommentPOJO {
      ************************************************************************/
     @Override
     public int hashCode() {
-        int result = hashCode;
-        if (result == 0){
-            result = 31 * result + name.hashCode();
-            result = 31 * result + url.hashCode();
-            result = 31 * result + comment.hashCode();
-            return result;
-        }
+        int result = 17;
+        result = 31 * result + name.hashCode();
+        result = 31 * result + url.hashCode();
+        result = 31 * result + comment.hashCode();
         return result;
     }
 
