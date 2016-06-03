@@ -14,7 +14,7 @@ public class BlogComment {
     private Date date;
     private String name;
 
-
+    public BlogComment(){}
     public BlogComment(int id, String url, String comment, Date date, String name) {
         this.id = id;
         this.url = url;
@@ -45,5 +45,29 @@ public class BlogComment {
     @JsonProperty
     public String getName() {
         return name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this){
+            return true;
+        }
+        if (!(o instanceof BlogComment)){
+            return false;
+        }
+        BlogComment b = (BlogComment)o;
+        return b.id == id
+                && b.url.equals(url)
+                && b.comment.equals(comment);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = result * 31 + id;
+        result = result * 31 + url.hashCode();
+        result = result * 31 + comment.hashCode();
+        result = result * 31 + name.hashCode();
+        return result;
     }
 }

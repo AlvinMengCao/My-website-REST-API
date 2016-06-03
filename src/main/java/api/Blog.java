@@ -9,18 +9,18 @@ import java.util.Date;
  * 1. Has optional fields, use builder instead of constructor
  */
 public class Blog {
-    private final int id;
-    private final String title;
-    private final String url;
-    private final Date date;
-    private final int percentage;
+    private  int id;
+    private  String title;
+    private  String url;
+    private  Date date;
+    private  int percentage;
 
-    private final String description;
-    private final String tag1;
-    private final String tag2;
-    private final String tag3;
-    private final String tag4;
-    private final String tag5;
+    private  String description;
+    private  String tag1;
+    private  String tag2;
+    private  String tag3;
+    private  String tag4;
+    private  String tag5;
 
     //构建器
     public static class Builder{
@@ -75,7 +75,22 @@ public class Blog {
         }
     }
 
+    public Blog(int id, String title, String url, Date date, int percentage, String description, String tag1, String tag2, String tag3, String tag4, String tag5) {
+        this.id = id;
+        this.title = title;
+        this.url = url;
+        this.date = date;
+        this.percentage = percentage;
+        this.description = description;
+        this.tag1 = tag1;
+        this.tag2 = tag2;
+        this.tag3 = tag3;
+        this.tag4 = tag4;
+        this.tag5 = tag5;
+    }
 
+    //for test
+    public Blog(){}
     public Blog(Builder builder) {
         id = builder.id;
         title = builder.title;
@@ -143,5 +158,40 @@ public class Blog {
     @JsonProperty
     public int getPercentage() {
         return percentage;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this){
+            return true;
+        }
+        if (!(o instanceof Blog)){
+            return false;
+        }
+        Blog b = (Blog)o;
+        return b.id == id
+                && b.title.equals(title)
+                && b.url.equals(url)
+                && b.percentage == percentage
+                && b.tag1.equals(tag1)
+                && b.tag2.equals(tag2)
+                && b.tag3.equals(tag3)
+                && b.tag4.equals(tag4)
+                && b.tag5.equals(tag5);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = result * 31 + id;
+        result = result * 31 + title.hashCode();
+        result = result * 31 + url.hashCode();
+        result = result * 31 + percentage;
+        result = result * 31 + tag1.hashCode();
+        result = result * 31 + tag2.hashCode();
+        result = result * 31 + tag3.hashCode();
+        result = result * 31 + tag4.hashCode();
+        result = result * 31 + tag5.hashCode();
+        return result;
     }
 }

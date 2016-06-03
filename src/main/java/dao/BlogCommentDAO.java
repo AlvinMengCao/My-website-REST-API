@@ -6,6 +6,7 @@ import org.hibernate.Session;
 import pojo.BlogCommentPOJO;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by alvin on 3/2/16.
@@ -14,18 +15,19 @@ import java.util.Date;
  * 2. All methods are public APIs, use public modifier.
  * 3. Already null obsolete objects.
  */
-public final class BlogCommentDAO extends DAOBase{
+public class BlogCommentDAO extends DAOBase{
     private static final BlogCommentDAO blogCommentDAO = new BlogCommentDAO();
     private BlogCommentDAO(){
 
     }
-    public void add(String url, String comment, String name){
+    public BlogComment add(String url, String comment, String name){
         Session ss = sessionFactory.getCurrentSession();
         ss.beginTransaction();
         BlogCommentPOJO blogCommentPOJO = new BlogCommentPOJO.Builder(url, comment, name, new Date()).build();
         ss.save(blogCommentPOJO);
         ss.getTransaction().commit();
-        blogCommentPOJO = null;
+        BlogComment blogComment = new BlogComment(blogCommentPOJO.getId(),url, comment, blogCommentPOJO.getDate(), name);
+        return blogComment;
     }
 
     public BlogComment getLast(){

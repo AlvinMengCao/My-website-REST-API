@@ -6,6 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 import pojo.POJOs;
 
+import java.util.List;
+
 /**
  * Created by alvin on 3/2/16.
  * 1.
@@ -32,5 +34,11 @@ public class BlogCommentDAOTest {
         blogCommentDAO.deleteLast();
         int size = blogCommentDAO.getSize(tableName);
         Assert.assertEquals(before, size);
+    }
+
+    @Test
+    public void getAll(){
+        List list = blogCommentDAO.getAll(tableName);
+        Assert.assertNotNull(list);
     }
 }

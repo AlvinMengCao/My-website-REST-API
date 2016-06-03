@@ -1,5 +1,6 @@
 package resource;
 
+import api.BlogComment;
 import dao.BlogCommentDAO;
 import pojo.POJOs;
 import service.Gravatar;
@@ -13,10 +14,15 @@ import java.util.List;
 @Path("/blogcomments")
 @Produces(MediaType.APPLICATION_JSON)
 public class BlogCommentResource {
-    private static final BlogCommentResource blogCommentResource = new BlogCommentResource();
-    private BlogCommentDAO blogCommentDAO = BlogCommentDAO.getBlogCommentDAO();;
 
-    private BlogCommentResource() {}
+    private static final BlogCommentResource blogCommentResource = new BlogCommentResource();
+    private BlogCommentDAO blogCommentDAO = BlogCommentDAO.getBlogCommentDAO();
+
+    //为了测试resource能够注入mock的dao
+    public BlogCommentResource(BlogCommentDAO b){
+        this.blogCommentDAO = b;
+    }
+    private BlogCommentResource(){}
 
 
     //获取所有评论内容
@@ -26,10 +32,9 @@ public class BlogCommentResource {
     }
 
     @POST
-    public List post(@QueryParam("email") String email, @QueryParam("name") String name, @QueryParam("comment") String comment){
+    public BlogComment post(@QueryParam("email") String email, @QueryParam("name") String name, @QueryParam("comment") String comment){
         String url = Gravatar.md5Hex(email);
-        blogCommentDAO.add(url, comment, name);
-        return blogCommentDAO.getAll(POJOs.BlogCommentPOJO.toString());
+        return blogCommentDAO.add(url, comment, name);
     }
 
     public static BlogCommentResource getInstance(){

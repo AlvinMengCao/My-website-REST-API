@@ -35,7 +35,7 @@ import java.util.List;
         return count;
     }
 
-    public final List getAll(String pojo){
+    public List getAll(String pojo){
         Session ss = sessionFactory.getCurrentSession();
         ss.beginTransaction();
         List list = ss.createQuery("from "+ pojo + " ORDER BY id desc").list();

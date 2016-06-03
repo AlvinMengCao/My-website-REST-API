@@ -1,0 +1,13 @@
+{
+  "id" : 1,
+  "title" : "title",
+  "url": "url",
+  "date": null,
+  "percentage": 20,
+  "description" : "description",
+  "tag1" : "tag1",
+  "tag2" : "tag2",
+  "tag3" : "tag3",
+  "tag4" : "tag4",
+  "tag5" : "tag5"
+}
