@@ -6,6 +6,7 @@ import pojo.POJOs;
 import service.Gravatar;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 /**
@@ -28,13 +29,13 @@ public class BlogCommentResource {
     //获取所有评论内容
     @GET
     public List getAll(){
-        return blogCommentDAO.getAll(POJOs.BlogCommentPOJO.toString());
+        return blogCommentDAO.getAll();
     }
 
     @POST
-    public BlogComment post(@QueryParam("email") String email, @QueryParam("name") String name, @QueryParam("comment") String comment){
-        String url = Gravatar.md5Hex(email);
-        return blogCommentDAO.add(url, comment, name);
+    public Response post(@QueryParam("email") String email, @QueryParam("name") String name, @QueryParam("comment") String comment){
+        BlogComment bc = blogCommentDAO.add(email, comment, name);
+        return Response.status(Response.Status.CREATED).entity(bc).build();
     }
 
     public static BlogCommentResource getInstance(){

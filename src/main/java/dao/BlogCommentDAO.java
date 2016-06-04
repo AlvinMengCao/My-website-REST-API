@@ -3,7 +3,10 @@ package dao;
 import api.BlogComment;
 import org.hibernate.Query;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import pojo.BlogCommentPOJO;
+import pojo.POJOs;
+import service.Gravatar;
 
 import java.util.Date;
 import java.util.List;
@@ -15,12 +18,14 @@ import java.util.List;
  * 2. All methods are public APIs, use public modifier.
  * 3. Already null obsolete objects.
  */
-public class BlogCommentDAO extends DAOBase{
+public class BlogCommentDAO  {
     private static final BlogCommentDAO blogCommentDAO = new BlogCommentDAO();
+    final SessionFactory sessionFactory = HibernateUtils.getSessionFactory();
     private BlogCommentDAO(){
 
     }
-    public BlogComment add(String url, String comment, String name){
+    public BlogComment add(String email, String comment, String name){
+        String url = Gravatar.md5Hex(email);
         Session ss = sessionFactory.getCurrentSession();
         ss.beginTransaction();
         BlogCommentPOJO blogCommentPOJO = new BlogCommentPOJO.Builder(url, comment, name, new Date()).build();
@@ -48,6 +53,21 @@ public class BlogCommentDAO extends DAOBase{
         query.setInteger(0, last);
         query.executeUpdate();
         ss.getTransaction().commit();
+    }
+    public List getAll(){
+        Session ss = sessionFactory.getCurrentSession();
+        ss.beginTransaction();
+        List list = ss.createQuery("from "+ POJOs.BlogCommentPOJO.toString() + " ORDER BY id desc").list();
+        ss.getTransaction().commit();
+        return list;
+    }
+
+    public final int getSize(){
+        Session ss = sessionFactory.getCurrentSession();
+        ss.beginTransaction();
+        int count = ((Long) ss.createQuery("select count(*) from "+POJOs.BlogCommentPOJO.toString()).uniqueResult()).intValue();
+        ss.getTransaction().commit();
+        return count;
     }
     public static BlogCommentDAO getBlogCommentDAO(){
         return blogCommentDAO;

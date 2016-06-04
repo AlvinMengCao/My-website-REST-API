@@ -25,20 +25,20 @@ public class BlogCommentDAOTest {
 
     @Test
     public void testAddDelet(){
-        int before = blogCommentDAO.getSize(tableName);
+        int before = blogCommentDAO.getSize();
         blogCommentDAO.add("www.baidu.com", "nihao", "alvin");
-        int after = blogCommentDAO.getSize(tableName);
+        int after = blogCommentDAO.getSize();
         BlogComment blogComment = blogCommentDAO.getLast();
         Assert.assertEquals("nihao", blogComment.getComment());
         Assert.assertEquals(1, after - before);
         blogCommentDAO.deleteLast();
-        int size = blogCommentDAO.getSize(tableName);
+        int size = blogCommentDAO.getSize();
         Assert.assertEquals(before, size);
     }
 
     @Test
     public void getAll(){
-        List list = blogCommentDAO.getAll(tableName);
+        List list = blogCommentDAO.getAll();
         Assert.assertNotNull(list);
     }
 }

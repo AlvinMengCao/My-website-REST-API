@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import dao.BlogCommentDAO;
 import io.dropwizard.testing.junit.ResourceTestRule;
 import org.junit.*;
-import pojo.POJOs;
 
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
@@ -33,7 +32,7 @@ public class BlogCommentResourceTest {
     @Before
     public void setUp(){
         list.add(bc);
-        when(dao.getAll(POJOs.BlogCommentPOJO.toString())).thenReturn(list);
+        when(dao.getAll()).thenReturn(list);
         when(dao.add("url","comment","name")).thenReturn(bc);
     }
 
@@ -49,19 +48,19 @@ public class BlogCommentResourceTest {
         System.out.println("Actual is " + actual);
 
         assertThat(actual).isEqualTo(expected);
-        verify(dao).getAll(POJOs.BlogCommentPOJO.toString());
+        verify(dao, times(1)).getAll();
     }
     @Test
     public void post() throws Exception{
         String expected = mapper.writeValueAsString(bc);
-        //String actual = resources.client().target("/blogcomments").request().post(String.class);
+        Response response = resources.client().target("/blogcomments").request()
+                .post(Entity.entity(bc, MediaType.APPLICATION_JSON_TYPE));
+        System.out.println(response.getEntity());
+        //String actual = mapper.writeValueAsString(response.getEntity());
+        //System.out.println(expected);
+       // System.out.println(actual);
 
-        final Response response = resources.client().target("/blogcomments")
-                .request().post(Entity.entity("url", "comment", "name", M));
-
-        System.out.println("Actual is " + actual);
-        assertThat(actual).isEqualTo(expected);
-        verify(dao).add("url", "comment", "name");
+        verify(dao).add(anyString(), anyString(), anyString());
     }
 
 }
