@@ -17,7 +17,7 @@ public class Gravatar {
 
 
     //Byte 数组变16进制，下面的方法会用到
-    public static String hex(byte[] array) {
+    private static String hex(byte[] array) {
         StringBuffer sb = new StringBuffer();
         for (int i = 0; i < array.length; ++i) {
             sb.append(Integer.toHexString((array[i]

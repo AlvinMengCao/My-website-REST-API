@@ -19,9 +19,8 @@ public class BlogCommentDAO  {
     private BlogCommentDAO(){
     }
 
-    public BlogCommentPOJO add(BlogCommentPOJO b){
+    public void add(BlogCommentPOJO b){
         daoBase.add(b);
-        return b;
     }
 
     public BlogCommentPOJO getLast(){

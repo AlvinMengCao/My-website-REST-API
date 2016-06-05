@@ -1,9 +1,12 @@
 package resource;
 
+import api.BlogComment;
 import dao.BlogCommentDAO;
+import logic.BlogCommentLogic;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 /**
@@ -14,26 +17,21 @@ import java.util.List;
 public class BlogCommentResource {
 
     private static final BlogCommentResource blogCommentResource = new BlogCommentResource();
-    private BlogCommentDAO blogCommentDAO = BlogCommentDAO.getInstance();
 
-    //为了测试resource能够注入mock的dao
-    public BlogCommentResource(BlogCommentDAO b){
-        this.blogCommentDAO = b;
-    }
     private BlogCommentResource(){}
 
 
     //获取所有评论内容
     @GET
-    public List getAll(){
-        return blogCommentDAO.getAll();
+    public List<BlogComment> getAll(){
+        return BlogCommentLogic.getInstance().getAll();
     }
 
-    /*@POST
+    @POST
     public Response post(@QueryParam("email") String email, @QueryParam("name") String name, @QueryParam("comment") String comment){
-        BlogComment bc = blogCommentDAO.add(email, comment, name);
-        return Response.status(Response.Status.CREATED).entity(bc).build();
-    }*/
+        BlogCommentLogic.getInstance().post(email, comment, name);
+        return Response.status(Response.Status.CREATED).build();
+    }
 
     public static BlogCommentResource getInstance(){
         return blogCommentResource;

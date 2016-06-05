@@ -26,9 +26,8 @@ public final class BlogDAO {
     private final String table = POJOs.BlogPOJO.toString();
     private BlogDAO(){}
 
-    public BlogPOJO add(BlogPOJO b){
+    public void add(BlogPOJO b){
         daoBase.add(b);
-        return b;
     }
 
     public BlogPOJO getLast(){
