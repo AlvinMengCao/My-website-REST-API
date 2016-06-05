@@ -18,7 +18,7 @@ public class BlogCommentPOJO {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private int id;
     private String url;
     private String comment;
     private String name;
@@ -53,15 +53,12 @@ public class BlogCommentPOJO {
     }
 
     //架构会用到的setter与getter们
-    public Integer getId() {
-
+    public int getId() {
         return id;
     }
-
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
-
     public String getUrl() {
         return url;
     }
@@ -102,9 +99,9 @@ public class BlogCommentPOJO {
             return false;
         }
         BlogCommentPOJO b = (BlogCommentPOJO)o;
-        return b.name == name
-                && b.url == url
-                && b.comment == comment;
+        return b.name.equals(name)
+                && b.url.equals(url)
+                && b.comment.equals(comment);
     }
 
     /**************************************************************************

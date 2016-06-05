@@ -1,55 +1,71 @@
 package dao;
 
+
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import pojo.BlogPOJO;
-
 import java.util.List;
 
-/********************************************************************************************
- * Created by alvin on 2/27/16.
- * 1. This is a class which contains three common DAO method.
- * 2. Shouldn't instantiate this class, use abstract to prevent this.
- * 3. All three methods are public APIs to other package, so they are public.
- * 4. This class is only seen within this package, outside client shouldn't touch this class,
- * but the methods.
- * 5. protected SessionFactory, ensure subclass can use it.
- * 6. Don't need to null obsolete objects
- * 7. Do not override methods in this class, don't provide override maintenance.
- * Future work-------------------------------------------------
- * 1. Add generics to getAll method
- * ***********************************************************************************************/
+/**
+ * Created by alvin on 6/4/16.
+ */
+ class DAOBase {
+    private static final DAOBase dao = new DAOBase();
+    private final SessionFactory sessionFactory = HibernateUtils.getSessionFactory();
+    private DAOBase(){}
 
-  abstract class DAOBase {
-    //this object is only a collection of method, shouldn't be instantiated
-
-    protected final SessionFactory sessionFactory = HibernateUtils.getSessionFactory();
-
-
-    public final int getSize(String pojo){
+    int getSize(String tableName){
         Session ss = sessionFactory.getCurrentSession();
         ss.beginTransaction();
-        int count = ((Long) ss.createQuery("select count(*) from "+pojo).uniqueResult()).intValue();
+        int count = ((Long) ss.createQuery("select count(*) from "+
+                tableName).uniqueResult()).intValue();
         ss.getTransaction().commit();
         return count;
     }
 
-    public List getAll(String pojo){
+    void deleteLast(String tableName, int last){
         Session ss = sessionFactory.getCurrentSession();
         ss.beginTransaction();
-        List list = ss.createQuery("from "+ pojo + " ORDER BY id desc").list();
+        Query q = ss.createQuery("delete from "+ tableName + " where id=?");
+        q.setInteger(0, last);
+        q.executeUpdate();
+        ss.getTransaction().commit();
+        q = null;
+    }
+
+    Object getLast(String table){
+        Session ss = sessionFactory.getCurrentSession();
+        ss.beginTransaction();
+        Object b = ss.createQuery("from "+table+" ORDER BY id DESC")
+                .setMaxResults(1).uniqueResult();
+        ss.getTransaction().commit();
+        return b;
+    }
+
+    List getAll(String table){
+        Session ss = sessionFactory.getCurrentSession();
+        ss.beginTransaction();
+        List list = ss.createQuery("from "+ table + " ORDER BY id desc").list();
         ss.getTransaction().commit();
         return list;
     }
 
-    public final void delete(int id, String pojo){
+    Object getSingle(int id, String name){
         Session ss = sessionFactory.getCurrentSession();
         ss.beginTransaction();
-        Query query = ss.createQuery("delete from " + pojo + " where id=?");
-        query.setInteger(0, id);
-        query.executeUpdate();
+        Object b = ss.get("pojo."+name,id);
+        ss.getTransaction().commit();
+        return b;
+    }
+
+    void add(Object o){
+        Session ss = sessionFactory.getCurrentSession();
+        ss.beginTransaction();
+        ss.save(o);
         ss.getTransaction().commit();
     }
 
+    static DAOBase getInstance(){
+        return dao;
+    }
 }

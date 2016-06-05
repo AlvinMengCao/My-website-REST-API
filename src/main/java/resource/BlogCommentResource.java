@@ -1,12 +1,9 @@
 package resource;
 
-import api.BlogComment;
 import dao.BlogCommentDAO;
-import pojo.POJOs;
-import service.Gravatar;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 import java.util.List;
 
 /**
@@ -17,7 +14,7 @@ import java.util.List;
 public class BlogCommentResource {
 
     private static final BlogCommentResource blogCommentResource = new BlogCommentResource();
-    private BlogCommentDAO blogCommentDAO = BlogCommentDAO.getBlogCommentDAO();
+    private BlogCommentDAO blogCommentDAO = BlogCommentDAO.getInstance();
 
     //为了测试resource能够注入mock的dao
     public BlogCommentResource(BlogCommentDAO b){
@@ -32,11 +29,11 @@ public class BlogCommentResource {
         return blogCommentDAO.getAll();
     }
 
-    @POST
+    /*@POST
     public Response post(@QueryParam("email") String email, @QueryParam("name") String name, @QueryParam("comment") String comment){
         BlogComment bc = blogCommentDAO.add(email, comment, name);
         return Response.status(Response.Status.CREATED).entity(bc).build();
-    }
+    }*/
 
     public static BlogCommentResource getInstance(){
         return blogCommentResource;

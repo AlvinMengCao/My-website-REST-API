@@ -185,8 +185,8 @@ public class BlogPOJO {
             return false;
         }
         BlogPOJO b = (BlogPOJO)o;
-        return b.title == title
-                && b.url == url
+        return b.title.equals(title)
+                && b.url.equals(url)
                 && b.percentage == percentage;
     }
 
