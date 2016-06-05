@@ -2,17 +2,11 @@ package resource;
 
 import api.BlogComment;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dao.BlogCommentDAO;
 import io.dropwizard.testing.junit.ResourceTestRule;
+import logic.BlogCommentLogic;
 import org.junit.*;
-
-import javax.ws.rs.client.Entity;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 import static org.mockito.Mockito.*;
 /**
@@ -20,46 +14,50 @@ import static org.mockito.Mockito.*;
  */
 public class BlogCommentResourceTest {
     private final ObjectMapper mapper = new ObjectMapper();
-    private static final BlogCommentDAO dao = mock(BlogCommentDAO.class);
-    private final BlogComment bc = new BlogComment(1, "url", "comment", new Date(), "name");
-    private final List<BlogComment> list = new ArrayList<BlogComment>();
+    private static final BlogCommentLogic bcl = mock(BlogCommentLogic.class);
+    private static final BlogComment bc = new BlogComment(1, "url", "comment", new Date(), "name");
+    private static final List<BlogComment> list = new ArrayList<BlogComment>();
 
     @ClassRule
     public static final ResourceTestRule resources = ResourceTestRule.builder()
-            .addResource(new BlogCommentResource(dao)).build();
+            .addResource(BlogCommentResource.getInstance(bcl)).build();
 
-    @Before
-    public void setUp(){
+
+    @BeforeClass
+    public static void setUp(){
         list.add(bc);
-        //when(dao.getAll()).thenReturn(list);
-        //when(dao.add("url","comment","name")).thenReturn(bc);
+        when(bcl.getAll()).thenReturn(list);
     }
 
-    @After
-    public void tearDown(){
-        reset(dao);
+    @AfterClass
+    public static void tearDown(){
+        reset(bcl);
     }
+
     @Test
     public void getAll() throws Exception{
         String expected = mapper.writeValueAsString(list);
         String actual = resources.client().target("/blogcomments").request().get(String.class);
-
-        System.out.println("Actual is " + actual);
-
-        //assertThat(actual).isEqualTo(expected);
-        verify(dao, times(1)).getAll();
+        Assert.assertEquals(actual, expected);
+        verify(bcl, times(1)).getAll();
     }
+
     @Test
     public void post() throws Exception{
-        String expected = mapper.writeValueAsString(bc);
-        Response response = resources.client().target("/blogcomments").request()
-                .post(Entity.entity(bc, MediaType.APPLICATION_JSON_TYPE));
-        System.out.println(response.getEntity());
-        //String actual = mapper.writeValueAsString(response.getEntity());
-        //System.out.println(expected);
-       // System.out.println(actual);
 
-        //verify(dao).add(anyString(), anyString(), anyString());
+        Response response = resources.client().target("/blogcomments")
+                .queryParam("email", "email")
+                .queryParam("name","name")
+                .queryParam("comment", "comment")
+                .request().post(null);
+        Assert.assertEquals(200, response.getStatus());
+        verify(bcl, times(1)).post(eq("email"), eq("comment"), eq("name"));
     }
 
+    @Test
+    public void getInstance(){
+        BlogCommentResource b1 = BlogCommentResource.getInstance();
+        BlogCommentResource b2 = BlogCommentResource.getInstance();
+        Assert.assertEquals(b1, b2);
+    }
 }

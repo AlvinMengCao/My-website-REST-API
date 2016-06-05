@@ -20,7 +20,7 @@ import java.util.List;
  * Future work--------------------------------------------------------
  * 1.Use builder instead of constructor.
  */
-public final class BlogDAO {
+public class BlogDAO {
     private static final BlogDAO blogDAO = new BlogDAO();
     private final DAOBase daoBase = DAOBase.getInstance();
     private final String table = POJOs.BlogPOJO.toString();
