@@ -36,8 +36,8 @@ public class PhotoResourceTest {
         when(pl.getByPath(anyString())).thenReturn(list);
         when(pl.getRootFolder()).thenReturn(list);
 
-        Gallery g1 = new Gallery(1, "title1", "url1", new Date(), "description1", 1);
-        Gallery g2 = new Gallery(2, "title2", "url2", new Date(), "description2", 2);
+        Gallery g1 = new Gallery.Builder(1, "title1", new Date()).build();
+        Gallery g2 = new Gallery.Builder(2, "title2", new Date()).build();
         listg.add(g1);
         listg.add(g2);
         when(gl.getAll()).thenReturn(listg);

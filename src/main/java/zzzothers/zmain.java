@@ -21,8 +21,8 @@ public class zmain {
     private static final Api api = cloudinary.api();
     public static void main(String[] args) throws Exception{
         GalleryPOJO g = new GalleryPOJO.Builder("example", new Date())
-                .description("example").num(1).url("example").build();
-        GalleryDAO.getInstance().add(g);
+                .description("example").num(1).url1("example").build();
+        System.out.println("nihao");
     }
 
 }

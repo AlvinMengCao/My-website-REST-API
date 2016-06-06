@@ -75,19 +75,6 @@ public class Blog {
         }
     }
 
-    public Blog(int id, String title, String url, Date date, int percentage, String description, String tag1, String tag2, String tag3, String tag4, String tag5) {
-        this.id = id;
-        this.title = title;
-        this.url = url;
-        this.date = date;
-        this.percentage = percentage;
-        this.description = description;
-        this.tag1 = tag1;
-        this.tag2 = tag2;
-        this.tag3 = tag3;
-        this.tag4 = tag4;
-        this.tag5 = tag5;
-    }
 
     //for test
     public Blog(){}

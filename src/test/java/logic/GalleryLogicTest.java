@@ -16,7 +16,7 @@ public class GalleryLogicTest {
 
     @BeforeClass
     public static void setUp(){
-        GalleryPOJO bcp = new GalleryPOJO.Builder("title1", new Date()).url("url1").build();
+        GalleryPOJO bcp = new GalleryPOJO.Builder("title1", new Date()).url1("url1").build();
         list1.add(bcp);
         when(dao.getAll()).thenReturn(list1);
     }
@@ -30,7 +30,7 @@ public class GalleryLogicTest {
         List<Gallery> list  = gl.getAll();
         Assert.assertNotNull(list);
         Gallery bc = list.get(0);
-        boolean equals = bc.getUrl().equals("url1")
+        boolean equals = bc.getUrl1().equals("url1")
                 && bc.getTitle().equals("title1");
         Assert.assertTrue(equals);
         verify(dao, times(1)).getAll();

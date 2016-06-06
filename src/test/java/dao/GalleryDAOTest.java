@@ -17,9 +17,9 @@ public class GalleryDAOTest {
     @BeforeClass
     public static void setUp(){
         example1 = new GalleryPOJO.Builder("title1", new Date())
-                .description("description1").num(1).url("url1").build();
+                .description("description1").num(1).url1("url11").build();
         example2 = new GalleryPOJO.Builder("title2", new Date())
-                .description("description2").num(2).url("url2").build();
+                .description("description2").num(2).url1("url12").build();
     }
 
     @Test
