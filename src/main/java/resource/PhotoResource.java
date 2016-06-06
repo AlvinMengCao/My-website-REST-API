@@ -33,6 +33,12 @@ public class PhotoResource {
         return pl.getByTag(tag);
     }
 
+    @GET
+    @Path("/folders")
+    public List<String> getRootFolder () throws Exception{
+        return pl.getRootFolder();
+
+    }
     public static PhotoResource getInstance(){
         return pr;
     }
@@ -40,4 +46,6 @@ public class PhotoResource {
         pl = pl1;
         return pr;
     }
+
+
 }

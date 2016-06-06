@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="577bb8e5-71c2-48c4-bb11-26addb7be6e5" name="Default" comment="add percentage">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/logic/PhotoLogic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resource/PhotoResource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/logic/PhotoLogicTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/alvin.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/alvin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/API.iml" afterPath="$PROJECT_DIR$/API.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/core/MyApplication.java" afterPath="$PROJECT_DIR$/src/main/java/core/MyApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resource/BlogResource.java" afterPath="$PROJECT_DIR$/src/main/java/resource/BlogResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/logic/PhotoLogic.java" afterPath="$PROJECT_DIR$/src/main/java/logic/PhotoLogic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resource/PhotoResource.java" afterPath="$PROJECT_DIR$/src/main/java/resource/PhotoResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/zzzothers/zmain.java" afterPath="$PROJECT_DIR$/src/main/java/zzzothers/zmain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java" afterPath="$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java" />
     </list>
     <ignored path="API.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,77 +34,80 @@
     <favorites_list name="API" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5777363">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="PhotoResource.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/resource/PhotoResource.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#getByPath#0;class#PhotoResource#0" expanded="false" />
-                    <element signature="method#getByTag#0;class#PhotoResource#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PhotoLogic.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/logic/PhotoLogic.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="39" column="32" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="32" />
-                  <folding>
-                    <element signature="method#getAll#0;class#PhotoLogic#0" expanded="false" />
-                    <element signature="docComment;method#getByTag#0;class#PhotoLogic#0" expanded="false" />
-                    <element signature="method#getByTag#0;class#PhotoLogic#0" expanded="false" />
-                    <element signature="docComment;method#getByPath#0;class#PhotoLogic#0" expanded="false" />
-                    <element signature="method#getByPath#0;class#PhotoLogic#0" expanded="false" />
-                    <element signature="docComment;method#grabUrl#0;class#PhotoLogic#0" expanded="false" />
-                    <element signature="method#grabUrl#0;class#PhotoLogic#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PhotoResourceTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6122449">
-                  <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#488#496#0" expanded="true" />
-                    <element signature="method#getAllTest#0;class#PhotoResourceTest#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="BlogCommentResourceTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/resource/BlogCommentResourceTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0707483">
-                  <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="36" />
-                  <folding>
-                    <element signature="e#1029#1030#0" expanded="true" />
-                    <element signature="e#1055#1056#0" expanded="true" />
-                    <element signature="method#post#0;class#BlogCommentResourceTest#0" expanded="false" />
-                    <element signature="method#getInstance#0;class#BlogCommentResourceTest#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PhotoResource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resource/PhotoResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getByPath#0;class#PhotoResource#0" expanded="false" />
+                <element signature="method#getInstance#1;class#PhotoResource#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhotoLogic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/PhotoLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+              <folding>
+                <element signature="method#getAll#0;class#PhotoLogic#0" expanded="false" />
+                <element signature="docComment;method#getByTag#0;class#PhotoLogic#0" expanded="false" />
+                <element signature="method#getByTag#0;class#PhotoLogic#0" expanded="false" />
+                <element signature="docComment;method#getByPath#0;class#PhotoLogic#0" expanded="false" />
+                <element signature="method#getByPath#0;class#PhotoLogic#0" expanded="false" />
+                <element signature="e#2160#2190#0" expanded="true" />
+                <element signature="method#grabUrl#0;class#PhotoLogic#0" expanded="false" />
+                <element signature="method#grabFolder#0;class#PhotoLogic#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhotoLogicTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/logic/PhotoLogicTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PhotoResourceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setUp#0;class#PhotoResourceTest#0" expanded="false" />
+                <element signature="method#getAllTest#0;class#PhotoResourceTest#0" expanded="false" />
+                <element signature="method#getByTag#0;class#PhotoResourceTest#0" expanded="false" />
+                <element signature="method#getByPath#0;class#PhotoResourceTest#0" expanded="false" />
+                <element signature="method#getRootFolder#0;class#PhotoResourceTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zmain.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zzzothers/zmain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.033635188">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#zmain#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -184,13 +180,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/service/Cloudinary.java" />
         <option value="$PROJECT_DIR$/src/main/java/resource/BlogResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/PhotoLogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/CloudinaryUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zzzothers/zmain.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/MyApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/logic/PhotoLogicTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/resource/PhotoResource.java" />
         <option value="$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/PhotoLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zzzothers/zmain.java" />
       </list>
     </option>
   </component>
@@ -451,6 +447,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -465,7 +462,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files" />
       </pane>
@@ -528,32 +524,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="API" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="My-website-REST-API" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -766,33 +736,7 @@
       <recent name="dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PhotoResourceTest">
-    <configuration default="false" name="resource in API" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="resource.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="API" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="resource" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.zmain">
     <configuration default="false" name="zmain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -878,6 +822,32 @@
       <option name="PACKAGE_NAME" value="resource" />
       <option name="MAIN_CLASS_NAME" value="resource.PhotoResourceTest" />
       <option name="METHOD_NAME" value="getByTag" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="PhotoResourceTest.getRootFolder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="API" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="resource" />
+      <option name="MAIN_CLASS_NAME" value="resource.PhotoResourceTest" />
+      <option name="METHOD_NAME" value="getRootFolder" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1314,19 +1284,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.resource in API" />
-      <item index="1" class="java.lang.String" itemvalue="Application.zmain" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest.getAllTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest.getByTag" />
+      <item index="0" class="java.lang.String" itemvalue="Application.zmain" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest.getAllTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest.getByTag" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest.getRootFolder" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest.getByTag" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest.getAllTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.zmain" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.resource in API" />
+        <item index="0" class="java.lang.String" itemvalue="Application.zmain" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest.getRootFolder" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest.getByTag" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest.getAllTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1400,20 +1370,18 @@
       <workItem from="1465154599110" duration="11185000" />
       <workItem from="1465166900196" duration="965000" />
       <workItem from="1465170438416" duration="11375000" />
+      <workItem from="1465188918323" duration="3131000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BlogCommentResourceTest_post - 2016.06.05 at 17h 34m 28s.xml">
-      <configuration name="BlogCommentResourceTest.post" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BlogCommentResourceTest_post - 2016.06.05 at 18h 05m 23s.xml">
-      <configuration name="BlogCommentResourceTest.post" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PhotoResourceTest - 2016.06.06 at 00h 11m 48s.xml">
+    <history-entry file="PhotoResourceTest - 2016.06.06 at 00h 17m 53s.xml">
       <configuration name="PhotoResourceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PhotoResourceTest - 2016.06.06 at 00h 17m 53s.xml">
+    <history-entry file="PhotoResourceTest - 2016.06.06 at 11h 54m 53s.xml">
+      <configuration name="PhotoResourceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PhotoResourceTest - 2016.06.06 at 11h 55m 29s.xml">
       <configuration name="PhotoResourceTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="PhotoResourceTest_getAllTest - 2016.06.06 at 00h 05m 35s.xml">
@@ -1428,6 +1396,9 @@
     <history-entry file="PhotoResourceTest_getByTag - 2016.06.06 at 00h 15m 49s.xml">
       <configuration name="PhotoResourceTest.getByTag" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PhotoResourceTest_getRootFolder - 2016.06.06 at 11h 55m 42s.xml">
+      <configuration name="PhotoResourceTest.getRootFolder" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="resource_in_API - 2016.06.05 at 17h 46m 16s.xml">
       <configuration name="resource in API" configurationId="JUnit" />
     </history-entry>
@@ -1436,7 +1407,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207428000" />
+    <option name="totallyTimeSpent" value="210559000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1449,16 +1420,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="21" width="1920" height="1059" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17063081" sideWeight="0.49812132" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16994819" sideWeight="0.49812132" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327818" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1470,30 +1440,31 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14376996" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20932643" sideWeight="0.49585405" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23003195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20829016" sideWeight="0.49585405" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23588924" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327818" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5041459" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15537018" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17468214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2940563" sideWeight="0.49585405" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2940563" sideWeight="0.49585405" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1505,8 +1476,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2012513" sideWeight="0.49806523" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1557,9 +1528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="method#getInstance#1;class#BlogResource#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1567,11 +1535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-          <folding>
-            <element signature="method#getLast#0;class#BlogDAO#0" expanded="false" />
-            <element signature="method#deleteLast#0;class#BlogDAO#0" expanded="false" />
-            <element signature="docComment;method#getAll#0;class#BlogDAO#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1579,13 +1542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#getSize#0;class#DAOBase#0" expanded="false" />
-            <element signature="method#deleteLast#0;class#DAOBase#0" expanded="false" />
-            <element signature="method#getAll#0;class#DAOBase#0" expanded="false" />
-            <element signature="method#getSingle#0;class#DAOBase#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1593,14 +1549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="method#BlogCommentDAO#0;class#BlogCommentDAO#0" expanded="false" />
-            <element signature="e#671#672#0" expanded="false" />
-            <element signature="e#701#702#0" expanded="false" />
-            <element signature="method#getLast#0;class#BlogCommentDAO#0" expanded="false" />
-            <element signature="method#deleteLast#0;class#BlogCommentDAO#0" expanded="false" />
-            <element signature="docComment;method#getAll#0;class#BlogCommentDAO#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1609,8 +1557,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
           <folding>
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
             <element signature="method#post#0;class#BlogCommentResourceTest#0" expanded="false" />
             <element signature="method#getInstance#0;class#BlogCommentResourceTest#0" expanded="false" />
           </folding>
@@ -1621,14 +1567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-          <folding>
-            <element signature="method#BlogCommentDAO#0;class#BlogCommentDAO#0" expanded="false" />
-            <element signature="e#671#672#0" expanded="false" />
-            <element signature="e#701#702#0" expanded="false" />
-            <element signature="method#getLast#0;class#BlogCommentDAO#0" expanded="false" />
-            <element signature="method#deleteLast#0;class#BlogCommentDAO#0" expanded="false" />
-            <element signature="docComment;method#getAll#0;class#BlogCommentDAO#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1658,9 +1596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-          <folding>
-            <element signature="method#hex#0;class#Gravatar#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1668,9 +1603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding>
-            <element signature="method#getInstance#1;class#BlogResource#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1766,12 +1698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="103" column="45" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
-          <folding>
-            <element signature="method#BlogCommentPOJO#1;class#BlogCommentPOJO#0" expanded="false" />
-            <element signature="docComment;method#equals#0;class#BlogCommentPOJO#0" expanded="false" />
-            <element signature="docComment;method#hashCode#0;class#BlogCommentPOJO#0" expanded="false" />
-            <element signature="method#hashCode#0;class#BlogCommentPOJO#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1779,13 +1705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.99680513">
           <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#getSize#0;class#DAOBase#0" expanded="false" />
-            <element signature="method#deleteLast#0;class#DAOBase#0" expanded="false" />
-            <element signature="method#getAll#0;class#DAOBase#0" expanded="false" />
-            <element signature="method#getSingle#0;class#DAOBase#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1832,21 +1751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="method#BlogCommentDAO#0;class#BlogCommentDAO#0" expanded="false" />
-            <element signature="e#671#672#0" expanded="false" />
-            <element signature="e#701#702#0" expanded="false" />
-            <element signature="method#getLast#0;class#BlogCommentDAO#0" expanded="false" />
-            <element signature="method#deleteLast#0;class#BlogCommentDAO#0" expanded="false" />
-            <element signature="docComment;method#getAll#0;class#BlogCommentDAO#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/logic/BlogLogicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16755603">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1861,13 +1765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9257143">
           <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Blog#0" expanded="false" />
-            <element signature="method#Blog#0;class#Blog#0" expanded="false" />
-            <element signature="method#Blog#2;class#Blog#0" expanded="false" />
-            <element signature="method#equals#0;class#Blog#0" expanded="false" />
-            <element signature="method#hashCode#0;class#Blog#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1885,14 +1782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8082902">
           <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1098#1099#0" expanded="false" />
-            <element signature="e#1123#1124#0" expanded="false" />
-            <element signature="method#testGetAll#0;class#BlogResourceTest#0" expanded="false" />
-            <element signature="method#testPost#0;class#BlogResourceTest#0" expanded="false" />
-            <element signature="method#testGetInstance#0;class#BlogResourceTest#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1915,9 +1804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5698758">
           <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <element signature="method#hex#0;class#Gravatar#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1933,7 +1819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20186335">
           <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1949,7 +1834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1726283">
           <caret line="37" column="5" selection-start-line="28" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1957,11 +1841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16796267">
           <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-          <folding>
-            <element signature="method#getLast#0;class#BlogDAO#0" expanded="false" />
-            <element signature="method#deleteLast#0;class#BlogDAO#0" expanded="false" />
-            <element signature="docComment;method#getAll#0;class#BlogDAO#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1969,20 +1848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33281493">
           <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getInstance#1;class#BlogResource#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zzzothers/zmain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#zmain#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1994,21 +1859,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/logic/PhotoLogicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15568863">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/resource/BlogCommentResourceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0707483">
+        <state vertical-scroll-proportion="0.033591732">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="36" />
           <folding>
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
             <element signature="method#post#0;class#BlogCommentResourceTest#0" expanded="false" />
             <element signature="method#getInstance#0;class#BlogCommentResourceTest#0" expanded="false" />
           </folding>
@@ -2018,39 +1873,69 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/resource/PhotoResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="82" selection-start-line="25" selection-start-column="82" selection-end-line="25" selection-end-column="82" />
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getByPath#0;class#PhotoResource#0" expanded="false" />
-            <element signature="method#getByTag#0;class#PhotoResource#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/PhotoLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="32" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="32" />
-          <folding>
-            <element signature="method#getAll#0;class#PhotoLogic#0" expanded="false" />
-            <element signature="docComment;method#getByTag#0;class#PhotoLogic#0" expanded="false" />
-            <element signature="method#getByTag#0;class#PhotoLogic#0" expanded="false" />
-            <element signature="docComment;method#getByPath#0;class#PhotoLogic#0" expanded="false" />
-            <element signature="method#getByPath#0;class#PhotoLogic#0" expanded="false" />
-            <element signature="docComment;method#grabUrl#0;class#PhotoLogic#0" expanded="false" />
-            <element signature="method#grabUrl#0;class#PhotoLogic#0" expanded="false" />
+            <element signature="method#getInstance#1;class#PhotoResource#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6122449">
-          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#488#496#0" expanded="true" />
+            <element signature="method#setUp#0;class#PhotoResourceTest#0" expanded="false" />
             <element signature="method#getAllTest#0;class#PhotoResourceTest#0" expanded="false" />
+            <element signature="method#getByTag#0;class#PhotoResourceTest#0" expanded="false" />
+            <element signature="method#getByPath#0;class#PhotoResourceTest#0" expanded="false" />
+            <element signature="method#getRootFolder#0;class#PhotoResourceTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/logic/PhotoLogicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/logic/BlogLogicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.9429348">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/PhotoLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <element signature="method#getAll#0;class#PhotoLogic#0" expanded="false" />
+            <element signature="docComment;method#getByTag#0;class#PhotoLogic#0" expanded="false" />
+            <element signature="method#getByTag#0;class#PhotoLogic#0" expanded="false" />
+            <element signature="docComment;method#getByPath#0;class#PhotoLogic#0" expanded="false" />
+            <element signature="method#getByPath#0;class#PhotoLogic#0" expanded="false" />
+            <element signature="e#2160#2190#0" expanded="true" />
+            <element signature="method#grabUrl#0;class#PhotoLogic#0" expanded="false" />
+            <element signature="method#grabFolder#0;class#PhotoLogic#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zzzothers/zmain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.033635188">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#zmain#0" expanded="false" />
           </folding>
         </state>
       </provider>

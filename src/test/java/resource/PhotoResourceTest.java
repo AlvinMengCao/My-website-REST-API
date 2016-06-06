@@ -25,6 +25,7 @@ public class PhotoResourceTest {
         when(pl.getAll()).thenReturn(list);
         when(pl.getByTag(anyString())).thenReturn(list);
         when(pl.getByPath(anyString())).thenReturn(list);
+        when(pl.getRootFolder()).thenReturn(list);
     }
     @AfterClass
     public static void tearDown() {
@@ -49,5 +50,11 @@ public class PhotoResourceTest {
         String actual = resources.client().target("/photos/path/ppp").request().get(String.class);
         Assert.assertEquals(actual, expected);
         verify(pl, times(1)).getByPath(eq("ppp"));
+    }
+    @Test
+    public void getRootFolder() throws Exception{
+        String actual = resources.client().target("/photos/folders").request().get(String.class);
+        Assert.assertEquals(actual, expected);
+        verify(pl, times(1)).getRootFolder();
     }
 }

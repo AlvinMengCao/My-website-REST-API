@@ -16,6 +16,7 @@ public class PhotoLogic {
             "api_key", "941183678927842",
             "api_secret", "359QMZPBNnT4w-h6umV_ffLIP6U"));
     private static final Api api = cloudinary.api();
+    private final String resources = "resources";
     private PhotoLogic(){}
 
     /**
@@ -54,6 +55,11 @@ public class PhotoLogic {
         return grabUrl(result);
     }
 
+    public List<String> getRootFolder() throws Exception{
+        Map result = api.rootFolders(ObjectUtils.emptyMap());
+        return grabFolder(result);
+    }
+
     /**
      * Passed in parameter is a Map<String, List<Map<String, String>>> object
      * Took me a lot of time to figure it out. Bullshit object and document.
@@ -72,6 +78,19 @@ public class PhotoLogic {
         map = null;
         return result;
     }
+
+    private List<String> grabFolder(Map map){
+        List<Map> list = (List)map.get("folders");
+        List<String> result = new ArrayList<String>();
+        for (Map<String, String> m : list){
+            String secure_url = m.get("path");
+            result.add(secure_url);
+            m = null;
+        }
+        map = null;
+        return result;
+    }
+
     public static PhotoLogic getInstance(){
         return pl;
     }
