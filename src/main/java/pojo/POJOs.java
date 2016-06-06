@@ -7,4 +7,5 @@ package pojo;
 public enum POJOs {
     BlogPOJO,
     BlogCommentPOJO,
+    GalleryPOJO,
 }

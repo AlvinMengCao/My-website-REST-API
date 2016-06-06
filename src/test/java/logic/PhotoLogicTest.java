@@ -5,5 +5,5 @@ package logic;
  * Created by alvin on 6/5/16.
  */
 public class PhotoLogicTest {
-
+    //don't need to test
 }

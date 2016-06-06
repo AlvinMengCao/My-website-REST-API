@@ -1,6 +1,5 @@
 package api;
 import static io.dropwizard.testing.FixtureHelpers.*;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.dropwizard.jackson.Jackson;
 import org.junit.Test;

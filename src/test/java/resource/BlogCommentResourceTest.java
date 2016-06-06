@@ -43,7 +43,7 @@ public class BlogCommentResourceTest {
     }
 
     @Test
-    public void post() throws Exception{
+    public void post() {
 
         Response response = resources.client().target("/blogcomments")
                 .queryParam("email", "email")

@@ -46,8 +46,8 @@ public class BlogDAOTest {
         Assert.assertEquals(1, size2 - size1);
         BlogPOJO b = dao.getLast();
         dao.deleteLast();
-        Assert.assertEquals(b, example1);
         int size3 = dao.getSize();
+        Assert.assertEquals(b, example1);
         Assert.assertEquals(size1, size3);
     }
 

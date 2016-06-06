@@ -1,9 +1,12 @@
 package resource;
 
+import api.Gallery;
+import logic.GalleryLogic;
 import logic.PhotoLogic;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 /**
@@ -14,6 +17,7 @@ import java.util.List;
 public class PhotoResource {
     private static final PhotoResource pr = new PhotoResource();
     private static PhotoLogic pl = PhotoLogic.getInstance();
+    private static GalleryLogic gl = GalleryLogic.getInstance();
     private PhotoResource(){}
 
     @GET
@@ -37,8 +41,21 @@ public class PhotoResource {
     @Path("/folders")
     public List<String> getRootFolder () throws Exception{
         return pl.getRootFolder();
-
     }
+
+    @GET
+    @Path("/gallery")
+    public List<Gallery> getGallery() {
+        return gl.getAll();
+    }
+
+    @POST
+    @Path("/gallery")
+    public Response post(@QueryParam("title") String title, @QueryParam("description") String description){
+        gl.post(title, description);
+        return Response.status(Response.Status.OK).build();
+    }
+
     public static PhotoResource getInstance(){
         return pr;
     }
@@ -47,5 +64,12 @@ public class PhotoResource {
         return pr;
     }
 
+    /**
+     * should only be used for mock test. Actually no other change
+     * can this be used in runtime.
+     */
+    public static void setGl(GalleryLogic gl) {
+        PhotoResource.gl = gl;
+    }
 
 }

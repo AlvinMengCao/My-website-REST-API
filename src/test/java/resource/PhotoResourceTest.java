@@ -1,9 +1,13 @@
 package resource;
 
+import api.Gallery;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.dropwizard.testing.junit.ResourceTestRule;
+import logic.GalleryLogic;
 import logic.PhotoLogic;
 import org.junit.*;
+
+import javax.ws.rs.core.Response;
 import java.util.*;
 import static org.mockito.Mockito.*;
 /**
@@ -12,13 +16,18 @@ import static org.mockito.Mockito.*;
 public class PhotoResourceTest {
     private static final ObjectMapper mapper = new ObjectMapper();
     private static final PhotoLogic pl = mock(PhotoLogic.class);
+    private static final GalleryLogic gl = mock(GalleryLogic.class);
     private static final List<String> list = new ArrayList<String>();
+    private static final List<Gallery> listg = new ArrayList<Gallery>();
     private static String expected;
+    private static PhotoResource pr = PhotoResource.getInstance(pl);
     @ClassRule
     public static final ResourceTestRule resources = ResourceTestRule.builder()
-            .addResource(PhotoResource.getInstance(pl)).build();
+            .addResource(pr).build();
     @BeforeClass
     public static void setUp() throws Exception{
+        pr.setGl(gl);
+
         list.add("first_url");
         list.add("second_url");
         expected = mapper.writeValueAsString(list);
@@ -26,6 +35,12 @@ public class PhotoResourceTest {
         when(pl.getByTag(anyString())).thenReturn(list);
         when(pl.getByPath(anyString())).thenReturn(list);
         when(pl.getRootFolder()).thenReturn(list);
+
+        Gallery g1 = new Gallery(1, "title1", "url1", new Date(), "description1", 1);
+        Gallery g2 = new Gallery(2, "title2", "url2", new Date(), "description2", 2);
+        listg.add(g1);
+        listg.add(g2);
+        when(gl.getAll()).thenReturn(listg);
     }
     @AfterClass
     public static void tearDown() {
@@ -57,4 +72,22 @@ public class PhotoResourceTest {
         Assert.assertEquals(actual, expected);
         verify(pl, times(1)).getRootFolder();
     }
+    @Test
+    public void getGalleryTest() throws Exception{
+
+        String expected = mapper.writeValueAsString(listg);
+        String actual = resources.client().target("/photos/gallery").request().get(String.class);
+        Assert.assertEquals(actual, expected);
+        verify(gl, times(1)).getAll();
+    }
+    @Test
+    public void postGalleryTest(){
+        Response response = resources.client().target("/photos/gallery")
+                .queryParam("title", "title")
+                .queryParam("description","description")
+                .request().post(null);
+        Assert.assertEquals(200, response.getStatus());
+        verify(gl, times(1)).post(eq("title"), eq("description"));
+    }
+
 }

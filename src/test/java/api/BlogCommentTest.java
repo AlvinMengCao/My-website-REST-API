@@ -14,8 +14,8 @@ public class BlogCommentTest {
     @Test
     public void deserializesFromJSON() throws Exception{
         final BlogComment bc = new BlogComment(1, "url", "comment", null, "name");
-        //assertThat(MAPPER.readValue(fixture("fixtures/blogcomment.json"), BlogComment.class))
-                //.isEqualTo(bc);
+        /*assertThat(MAPPER.readValue(fixture("fixtures/blogcomment.json"), BlogComment.class))
+                .isEqualTo(bc);*/
     }
 
     @Test
