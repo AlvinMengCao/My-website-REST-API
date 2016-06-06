@@ -3,6 +3,7 @@ package core;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import logic.PhotoLogic;
 import org.eclipse.jetty.servlets.CrossOriginFilter;
 import resource.*;
 
@@ -34,8 +35,10 @@ public class MyApplication extends Application<ApplicationConfiguration> {
 
         final BlogResource blogResource = BlogResource.getInstance();
         final BlogCommentResource blogCommentResource = BlogCommentResource.getInstance();
+        final PhotoResource photoResource = PhotoResource.getInstance();
         environment.jersey().register(blogResource);
         environment.jersey().register(blogCommentResource);
+        environment.jersey().register(photoResource);
     }
 
 }

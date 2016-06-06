@@ -1,7 +1,6 @@
 package resource;
 
 import api.Blog;
-import dao.BlogDAO;
 import logic.BlogLogic;
 
 import javax.ws.rs.*;
