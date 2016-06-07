@@ -6,8 +6,10 @@ import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
 import dao.GalleryDAO;
 import pojo.GalleryPOJO;
+import resource.PhotoResource;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -20,9 +22,9 @@ public class zmain {
             "api_secret", "359QMZPBNnT4w-h6umV_ffLIP6U"));
     private static final Api api = cloudinary.api();
     public static void main(String[] args) throws Exception{
-        GalleryPOJO g = new GalleryPOJO.Builder("example", new Date())
-                .description("example").num(1).url1("example").build();
-        System.out.println("nihao");
+        PhotoResource pr = PhotoResource.getInstance();
+        List list = pr.getGallery();
+        System.out.println(list);
     }
 
 }

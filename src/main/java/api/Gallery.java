@@ -154,4 +154,14 @@ public class Gallery {
         result = 31 * result + num;
         return result;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder(super.toString());
+        sb.append(" | Title is: ").append(title);
+        sb.append(" | URL is: ").append(url1).append(url2).append(url3).append(url4).append(url5);
+        sb.append(" | Num of Photos is: ").append(num);
+        sb.append(" | Description is: ").append(description);
+        return sb.toString();
+    }
 }

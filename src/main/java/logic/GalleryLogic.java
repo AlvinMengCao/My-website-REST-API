@@ -30,7 +30,9 @@ public class GalleryLogic {
     private List<Gallery> convertList(List<GalleryPOJO> all) {
         List<Gallery> result = new ArrayList<Gallery>();
         for (GalleryPOJO gp : all){
-            Gallery g = new Gallery.Builder(gp.getId(), gp.getTitle(), gp.getDate()).build();
+            Gallery g = new Gallery.Builder(gp.getId(), gp.getTitle(), gp.getDate()).url1(gp.getUrl1())
+                    .url2(gp.getUrl2()).url3(gp.getUrl3()).url4(gp.getUrl4()).url5(gp.getUrl5())
+                    .description(gp.getDescription()).num(gp.getNum()).build();
             result.add(g);
             gp = null;
         }
