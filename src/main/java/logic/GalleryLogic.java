@@ -32,7 +32,8 @@ public class GalleryLogic {
         for (GalleryPOJO gp : all){
             Gallery g = new Gallery.Builder(gp.getId(), gp.getTitle(), gp.getDate()).url1(gp.getUrl1())
                     .url2(gp.getUrl2()).url3(gp.getUrl3()).url4(gp.getUrl4()).url5(gp.getUrl5())
-                    .description(gp.getDescription()).num(gp.getNum()).build();
+                    .url6(gp.getUrl6()).url7(gp.getUrl7()).url8(gp.getUrl8()).url9(gp.getUrl9())
+                    .category(gp.getCategory()).description(gp.getDescription()).num(gp.getNum()).build();
             result.add(g);
             gp = null;
         }
