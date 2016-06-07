@@ -5,7 +5,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/api/Gallery.java" afterPath="$PROJECT_DIR$/src/main/java/api/Gallery.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/logic/GalleryLogic.java" afterPath="$PROJECT_DIR$/src/main/java/logic/GalleryLogic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/zzzothers/zmain.java" afterPath="$PROJECT_DIR$/src/main/java/zzzothers/zmain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pojo/GalleryPOJO.java" afterPath="$PROJECT_DIR$/src/main/java/pojo/GalleryPOJO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resource/PhotoResource.java" afterPath="$PROJECT_DIR$/src/main/java/resource/PhotoResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/dao/GalleryDAOTest.java" afterPath="$PROJECT_DIR$/src/test/java/dao/GalleryDAOTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/logic/GalleryLogicTest.java" afterPath="$PROJECT_DIR$/src/test/java/logic/GalleryLogicTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java" afterPath="$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java" />
     </list>
     <ignored path="API.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,104 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GalleryLogic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/GalleryLogic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="34" column="79" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
-                <element signature="method#post#0;class#GalleryLogic#0" expanded="false" />
-                <element signature="docComment;method#getInstance#1;class#GalleryLogic#0" expanded="false" />
-                <element signature="method#getInstance#1;class#GalleryLogic#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gallery.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/Gallery.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1456">
-              <caret line="164" column="29" selection-start-line="164" selection-start-column="29" selection-end-line="164" selection-end-column="29" />
-              <folding>
-                <element signature="class#Builder#0;class#Gallery#0" expanded="false" />
-                <element signature="method#Builder#0;class#Builder#0;class#Gallery#0" expanded="false" />
-                <element signature="method#url1#0;class#Builder#0;class#Gallery#0" expanded="false" />
-                <element signature="method#url2#0;class#Builder#0;class#Gallery#0" expanded="false" />
-                <element signature="method#url3#0;class#Builder#0;class#Gallery#0" expanded="false" />
-                <element signature="method#url4#0;class#Builder#0;class#Gallery#0" expanded="false" />
-                <element signature="method#url5#0;class#Builder#0;class#Gallery#0" expanded="false" />
-                <element signature="method#description#0;class#Builder#0;class#Gallery#0" expanded="false" />
-                <element signature="method#num#0;class#Builder#0;class#Gallery#0" expanded="false" />
-                <element signature="method#Gallery#1;class#Gallery#0" expanded="false" />
-                <element signature="method#equals#0;class#Gallery#0" expanded="false" />
-                <element signature="method#hashCode#0;class#Gallery#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhotoResourceTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-              <folding>
-                <element signature="method#getAllTest#0;class#PhotoResourceTest#0" expanded="false" />
-                <element signature="method#getByTag#0;class#PhotoResourceTest#0" expanded="false" />
-                <element signature="method#getRootFolder#0;class#PhotoResourceTest#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zmain.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zzzothers/zmain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-              <folding>
-                <element signature="docComment;class#zmain#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GalleryLogicTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/logic/GalleryLogicTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#423#436#0" expanded="false" />
-                <element signature="e#709#710#0" expanded="false" />
-                <element signature="e#735#736#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GalleryTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/api/GalleryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="17" column="85" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GalleryDAOTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GalleryDAOTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/dao/GalleryDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2054">
-              <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+            <state relative-caret-position="222">
+              <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -140,15 +51,25 @@
       <file leaf-file-name="GalleryDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/GalleryDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+            <state relative-caret-position="220">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <element signature="e#434#435#0" expanded="true" />
                 <element signature="e#464#465#0" expanded="true" />
                 <element signature="method#deleteLast#0;class#GalleryDAO#0" expanded="false" />
                 <element signature="docComment;method#getAll#0;class#GalleryDAO#0" expanded="false" />
+                <element signature="e#845#846#0" expanded="true" />
                 <element signature="e#908#909#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAOBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/DAOBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,37 +77,59 @@
       <file leaf-file-name="GalleryPOJO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pojo/GalleryPOJO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="193" column="29" selection-start-line="188" selection-start-column="8" selection-end-line="193" selection-end-column="29" />
+            <state relative-caret-position="220">
+              <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+                <element signature="method#GalleryPOJO#1;class#GalleryPOJO#0" expanded="false" />
                 <element signature="method#Builder#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
                 <element signature="method#url1#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
                 <element signature="method#url2#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
                 <element signature="method#url3#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
                 <element signature="method#url4#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
                 <element signature="method#url5#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+                <element signature="method#url6#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+                <element signature="method#url7#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+                <element signature="method#url8#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+                <element signature="method#url9#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
                 <element signature="method#description#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
                 <element signature="method#num#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
-                <element signature="method#hashCode#0;class#GalleryPOJO#0" expanded="false" />
+                <element signature="method#category#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+                <element signature="method#equals#0;class#GalleryPOJO#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhotoResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resource/PhotoResource.java">
+      <file leaf-file-name="BlogComment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/BlogComment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="55" column="59" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
+            <state relative-caret-position="-41">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="17" />
               <folding>
-                <element signature="method#getByPath#0;class#PhotoResource#0" expanded="false" />
-                <element signature="e#1163#1164#0" expanded="true" />
-                <element signature="e#1197#1198#0" expanded="true" />
-                <element signature="method#getInstance#1;class#PhotoResource#0" expanded="false" />
-                <element signature="docComment;method#setGl#0;class#PhotoResource#0" expanded="false" />
+                <element signature="method#equals#0;class#BlogComment#0" expanded="false" />
+                <element signature="method#hashCode#0;class#BlogComment#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogPOJO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pojo/BlogPOJO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="213" column="5" selection-start-line="213" selection-start-column="5" selection-end-line="213" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogCommentPOJO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pojo/BlogCommentPOJO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="122" column="63" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -258,19 +201,19 @@
         <option value="$PROJECT_DIR$/src/main/java/dao/GalleryDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/BlogDAOTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/logic/PhotoLogicTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/resource/PhotoResource.java" />
         <option value="$PROJECT_DIR$/src/test/java/resource/BlogResourceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/resource/BlogCommentResourceTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/api/Blog.java" />
-        <option value="$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/dao/GalleryDAOTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/api/GalleryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/logic/GalleryLogicTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pojo/GalleryPOJO.java" />
         <option value="$PROJECT_DIR$/src/main/java/zzzothers/zmain.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/Gallery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resource/PhotoResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/GalleryLogic.java" />
+        <option value="$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/logic/GalleryLogicTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pojo/GalleryPOJO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dao/GalleryDAOTest.java" />
       </list>
     </option>
   </component>
@@ -533,24 +476,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="API" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="API" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files" />
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -829,6 +757,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -871,33 +814,7 @@
       <recent name="dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.zmain">
-    <configuration default="false" name="resource in API" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="resource.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="API" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="resource" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.GalleryDAOTest.testGetAll">
     <configuration default="false" name="PhotoResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -979,6 +896,32 @@
       <option name="MAIN_CLASS_NAME" value="dao.GalleryDAOTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="GalleryDAOTest.testGetAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="API" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.GalleryDAOTest" />
+      <option name="METHOD_NAME" value="testGetAll" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -1356,19 +1299,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.resource in API" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.All in API" />
-      <item index="3" class="java.lang.String" itemvalue="Application.zmain" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GalleryDAOTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in API" />
+      <item index="2" class="java.lang.String" itemvalue="Application.zmain" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GalleryDAOTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GalleryDAOTest.testGetAll" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.zmain" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.GalleryDAOTest.testGetAll" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.GalleryDAOTest" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.All in API" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.resource in API" />
+        <item index="3" class="java.lang.String" itemvalue="Application.zmain" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PhotoResourceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1449,25 +1392,26 @@
       <workItem from="1465231717137" duration="6821000" />
       <workItem from="1465245909314" duration="8000" />
       <workItem from="1465254532578" duration="1734000" />
-      <workItem from="1465306043829" duration="371000" />
+      <workItem from="1465306043829" duration="868000" />
+      <workItem from="1465318295572" duration="2115000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_API - 2016.06.06 at 19h 26m 42s.xml">
+    <history-entry file="All_in_API - 2016.06.07 at 13h 33m 44s.xml">
       <configuration name="All in API" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GalleryDAOTest - 2016.06.06 at 19h 28m 41s.xml">
-      <configuration name="GalleryDAOTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GalleryDAOTest - 2016.06.06 at 19h 31m 52s.xml">
-      <configuration name="GalleryDAOTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GalleryDAOTest - 2016.06.06 at 19h 33m 35s.xml">
-      <configuration name="GalleryDAOTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="GalleryDAOTest - 2016.06.06 at 19h 37m 02s.xml">
       <configuration name="GalleryDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GalleryDAOTest - 2016.06.07 at 13h 36m 55s.xml">
+      <configuration name="GalleryDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GalleryDAOTest_testGetAll - 2016.06.07 at 13h 39m 15s.xml">
+      <configuration name="GalleryDAOTest.testGetAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GalleryDAOTest_testGetAll - 2016.06.07 at 13h 43m 23s.xml">
+      <configuration name="GalleryDAOTest.testGetAll" configurationId="JUnit" />
     </history-entry>
     <history-entry file="logic_in_API - 2016.06.06 at 14h 26m 23s.xml">
       <configuration name="logic in API" configurationId="JUnit" />
@@ -1486,7 +1430,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219614000" />
+    <option name="totallyTimeSpent" value="222226000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1510,7 +1454,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15384616" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28601035" sideWeight="0.49585405" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16994819" sideWeight="0.49812132" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13782384" sideWeight="0.49812132" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18945634" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1688,13 +1632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/BlogCommentPOJO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="103" column="45" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/dao/BlogCommentDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1751,13 +1688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/BlogPOJO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="212" column="29" selection-start-line="208" selection-start-column="8" selection-end-line="212" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1770,13 +1700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DAOBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1884,44 +1807,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/BlogComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-          <folding>
-            <element signature="method#getAllTest#0;class#PhotoResourceTest#0" expanded="false" />
-            <element signature="method#getByTag#0;class#PhotoResourceTest#0" expanded="false" />
-            <element signature="method#getRootFolder#0;class#PhotoResourceTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/api/GalleryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="17" column="85" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/logic/GalleryLogicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#423#436#0" expanded="false" />
-            <element signature="e#709#710#0" expanded="false" />
-            <element signature="e#735#736#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1933,66 +1824,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dao/GalleryDAOTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/zzzothers/zmain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2054">
-          <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resource/PhotoResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="55" column="59" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
+        <state relative-caret-position="390">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
-            <element signature="method#getByPath#0;class#PhotoResource#0" expanded="false" />
-            <element signature="e#1163#1164#0" expanded="true" />
-            <element signature="e#1197#1198#0" expanded="true" />
-            <element signature="method#getInstance#1;class#PhotoResource#0" expanded="false" />
-            <element signature="docComment;method#setGl#0;class#PhotoResource#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/GalleryDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding>
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="method#deleteLast#0;class#GalleryDAO#0" expanded="false" />
-            <element signature="docComment;method#getAll#0;class#GalleryDAO#0" expanded="false" />
-            <element signature="e#908#909#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/GalleryPOJO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="193" column="29" selection-start-line="188" selection-start-column="8" selection-end-line="193" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#Builder#0;class#GalleryPOJO#0" expanded="false" />
-            <element signature="method#Builder#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
-            <element signature="method#url1#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
-            <element signature="method#url2#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
-            <element signature="method#url3#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
-            <element signature="method#url4#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
-            <element signature="method#url5#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
-            <element signature="method#description#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
-            <element signature="method#num#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
-            <element signature="method#hashCode#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="docComment;class#zmain#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/Gallery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1456">
-          <caret line="164" column="29" selection-start-line="164" selection-start-column="29" selection-end-line="164" selection-end-column="29" />
+        <state relative-caret-position="546">
+          <caret line="220" column="5" selection-start-line="220" selection-start-column="5" selection-end-line="220" selection-end-column="5" />
           <folding>
             <element signature="class#Builder#0;class#Gallery#0" expanded="false" />
             <element signature="method#Builder#0;class#Builder#0;class#Gallery#0" expanded="false" />
@@ -2001,37 +1846,146 @@
             <element signature="method#url3#0;class#Builder#0;class#Gallery#0" expanded="false" />
             <element signature="method#url4#0;class#Builder#0;class#Gallery#0" expanded="false" />
             <element signature="method#url5#0;class#Builder#0;class#Gallery#0" expanded="false" />
+            <element signature="method#url6#0;class#Builder#0;class#Gallery#0" expanded="false" />
+            <element signature="method#url7#0;class#Builder#0;class#Gallery#0" expanded="false" />
+            <element signature="method#url8#0;class#Builder#0;class#Gallery#0" expanded="false" />
+            <element signature="method#url9#0;class#Builder#0;class#Gallery#0" expanded="false" />
+            <element signature="method#category#0;class#Builder#0;class#Gallery#0" expanded="false" />
             <element signature="method#description#0;class#Builder#0;class#Gallery#0" expanded="false" />
             <element signature="method#num#0;class#Builder#0;class#Gallery#0" expanded="false" />
             <element signature="method#Gallery#1;class#Gallery#0" expanded="false" />
             <element signature="method#equals#0;class#Gallery#0" expanded="false" />
             <element signature="method#hashCode#0;class#Gallery#0" expanded="false" />
+            <element signature="method#toString#0;class#Gallery#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resource/PhotoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
+          <folding>
+            <element signature="method#getByPath#0;class#PhotoResource#0" expanded="false" />
+            <element signature="method#getInstance#1;class#PhotoResource#0" expanded="false" />
+            <element signature="docComment;method#setGl#0;class#PhotoResource#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/GalleryLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="34" column="79" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
+        <state relative-caret-position="520">
+          <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
             <element signature="method#post#0;class#GalleryLogic#0" expanded="false" />
+            <element signature="method#convertList#0;class#GalleryLogic#0" expanded="false" />
             <element signature="docComment;method#getInstance#1;class#GalleryLogic#0" expanded="false" />
             <element signature="method#getInstance#1;class#GalleryLogic#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zzzothers/zmain.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/resource/PhotoResourceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="432">
+          <caret line="87" column="48" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
           <folding>
-            <element signature="docComment;class#zmain#0" expanded="false" />
+            <element signature="method#getAllTest#0;class#PhotoResourceTest#0" expanded="false" />
+            <element signature="method#getByTag#0;class#PhotoResourceTest#0" expanded="false" />
+            <element signature="method#getRootFolder#0;class#PhotoResourceTest#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/logic/GalleryLogicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DAOBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/GalleryDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="method#deleteLast#0;class#GalleryDAO#0" expanded="false" />
+            <element signature="docComment;method#getAll#0;class#GalleryDAO#0" expanded="false" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/BlogComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="method#equals#0;class#BlogComment#0" expanded="false" />
+            <element signature="method#hashCode#0;class#BlogComment#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/BlogPOJO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="213" column="5" selection-start-line="213" selection-start-column="5" selection-end-line="213" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/BlogCommentPOJO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="122" column="63" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pojo/GalleryPOJO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#GalleryPOJO#1;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#Builder#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#url1#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#url2#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#url3#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#url4#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#url5#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#url6#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#url7#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#url8#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#url9#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#description#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#num#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#category#0;class#Builder#0;class#GalleryPOJO#0" expanded="false" />
+            <element signature="method#equals#0;class#GalleryPOJO#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dao/GalleryDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>

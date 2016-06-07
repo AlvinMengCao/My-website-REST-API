@@ -19,9 +19,14 @@ public class GalleryPOJO {
     private String url3;
     private String url4;
     private String url5;
+    private String url6;
+    private String url7;
+    private String url8;
+    private String url9;
     private Date date;
     private String description;
     private int num;
+    private String category;
 
     /***********************************************************************************
      * 此无参数构造器必须提供，Hibernate的Constructor.newInstance()会用这个来创建，至少是包可见
@@ -34,9 +39,14 @@ public class GalleryPOJO {
         url3 = b.url3;
         url4 = b.url4;
         url5 = b.url5;
+        url6 = b.url6;
+        url7 = b.url7;
+        url8 = b.url8;
+        url9 = b.url9;
         date = b.date;
         description = b.description;
         num = b.num;
+        category = b.category;
     }
     public static class Builder{
         private String title;
@@ -47,8 +57,14 @@ public class GalleryPOJO {
         private String url3 = "url3";
         private String url4 = "url4";
         private String url5 = "url5";
+        private String url6 = "url6";
+        private String url7 = "url7";
+        private String url8 = "url8";
+        private String url9 = "url9";
         private String description = "no description";
         private int num = 0;
+        private String category = "default";
+
         public Builder(String title, Date date){
             this.title = title;
             this.date = date;
@@ -73,6 +89,22 @@ public class GalleryPOJO {
             url5 = val;
             return this;
         }
+        public Builder url6(String val){
+            url6 = val;
+            return this;
+        }
+        public Builder url7(String val){
+            url7 = val;
+            return this;
+        }
+        public Builder url8(String val){
+            url8 = val;
+            return this;
+        }
+        public Builder url9(String val){
+            url9 = val;
+            return this;
+        }
         public Builder description(String val){
             description = val;
             return this;
@@ -81,10 +113,13 @@ public class GalleryPOJO {
             num = val;
             return this;
         }
+        public Builder category(String val){
+            category = val;
+            return this;
+        }
         public GalleryPOJO build(){
             return new GalleryPOJO(this);
         }
-
     }
 
     //架构用到的set与get方法
@@ -150,6 +185,36 @@ public class GalleryPOJO {
     public void setUrl5(String url5) {
         this.url5 = url5;
     }
+    public String getUrl6() {
+        return url6;
+    }
+    public void setUrl6(String url6) {
+        this.url6 = url6;
+    }
+    public String getUrl7() {
+        return url7;
+    }
+    public void setUrl7(String url7) {
+        this.url7 = url7;
+    }
+    public String getUrl8() {
+        return url8;
+    }
+    public void setUrl8(String url8) {
+        this.url8 = url8;
+    }
+    public String getUrl9() {
+        return url9;
+    }
+    public void setUrl9(String url9) {
+        this.url9 = url9;
+    }
+    public String getCategory() {
+        return category;
+    }
+    public void setCategory(String category) {
+        this.category = category;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -166,6 +231,11 @@ public class GalleryPOJO {
                 && g.url3.equals(url3)
                 && g.url4.equals(url4)
                 && g.url5.equals(url5)
+                && g.url6.equals(url6)
+                && g.url7.equals(url7)
+                && g.url8.equals(url8)
+                && g.url9.equals(url9)
+                && g.category.equals(category)
                 && g.description.equals(description)
                 && g.num == num;
     }
@@ -179,6 +249,11 @@ public class GalleryPOJO {
         result = 31 * result + url3.hashCode();
         result = 31 * result + url4.hashCode();
         result = 31 * result + url5.hashCode();
+        result = 31 * result + url6.hashCode();
+        result = 31 * result + url7.hashCode();
+        result = 31 * result + url8.hashCode();
+        result = 31 * result + url9.hashCode();
+        result = 31 * result + category.hashCode();
         result = 31 * result + description.hashCode();
         result = 31 * result + num;
         return result;
@@ -188,7 +263,8 @@ public class GalleryPOJO {
     public String toString() {
         StringBuilder sb = new StringBuilder(super.toString());
         sb.append(" | Title is: ").append(title);
-        sb.append(" | URL is: ").append(url1).append(url2).append(url3).append(url4).append(url5);
+        sb.append(" | URL is: ").append(url1).append(url2).append(url3).append(url4)
+                .append(url5).append(url6).append(url7).append(url8).append(url9);
         sb.append(" | Num of Photos is: ").append(num);
         sb.append(" | Description is: ").append(description);
         return sb.toString();

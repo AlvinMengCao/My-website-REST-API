@@ -20,9 +20,9 @@ public class GalleryLogic {
     public List<Gallery> getAll(){
         return convertList(dao.getAll());
     }
-    public void post(String title, String description){
+    public void post(String title, String description, String category){
         GalleryPOJO gp = new GalleryPOJO.Builder(title, new Date())
-                .description(description).build();
+                .description(description).category(category).build();
         dao.add(gp);
         gp = null;
     }

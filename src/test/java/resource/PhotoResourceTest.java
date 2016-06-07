@@ -85,9 +85,10 @@ public class PhotoResourceTest {
         Response response = resources.client().target("/photos/gallery")
                 .queryParam("title", "title")
                 .queryParam("description","description")
+                .queryParam("category","category")
                 .request().post(null);
         Assert.assertEquals(200, response.getStatus());
-        verify(gl, times(1)).post(eq("title"), eq("description"));
+        verify(gl, times(1)).post(eq("title"), eq("description"), eq("category"));
     }
 
 }

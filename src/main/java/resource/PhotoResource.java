@@ -51,8 +51,9 @@ public class PhotoResource {
 
     @POST
     @Path("/gallery")
-    public Response post(@QueryParam("title") String title, @QueryParam("description") String description){
-        gl.post(title, description);
+    public Response post(@QueryParam("title") String title, @QueryParam("description") String description,
+                         @QueryParam("category") String category){
+        gl.post(title, description, category);
         return Response.status(Response.Status.OK).build();
     }
 

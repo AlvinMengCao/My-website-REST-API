@@ -15,6 +15,11 @@ public class Gallery {
     private String url3;
     private String url4;
     private String url5;
+    private String url6;
+    private String url7;
+    private String url8;
+    private String url9;
+    private String category;
     private Date date;
     private String description;
     private int num;
@@ -29,6 +34,11 @@ public class Gallery {
         private String url3 = "url3";
         private String url4 = "url4";
         private String url5 = "url5";
+        private String url6 = "url6";
+        private String url7 = "url7";
+        private String url8 = "url8";
+        private String url9 = "url9";
+        private String category = "default";
         private String description = "no description";
         private int num = 0;
         public Builder(int id, String title, Date date){
@@ -56,6 +66,26 @@ public class Gallery {
             url5 = val;
             return this;
         }
+        public Builder url6(String val){
+            url6 = val;
+            return this;
+        }
+        public Builder url7(String val){
+            url7 = val;
+            return this;
+        }
+        public Builder url8(String val){
+            url8 = val;
+            return this;
+        }
+        public Builder url9(String val){
+            url9 = val;
+            return this;
+        }
+        public Builder category(String val){
+            category = val;
+            return this;
+        }
         public Builder description(String val){
             description = val;
             return this;
@@ -77,6 +107,11 @@ public class Gallery {
         url3 = b.url3;
         url4 = b.url4;
         url5 = b.url5;
+        url6 = b.url6;
+        url7 = b.url7;
+        url8 = b.url8;
+        url9 = b.url9;
+        category = b.category;
         date = b.date;
         description = b.description;
         num = b.num;
@@ -122,6 +157,26 @@ public class Gallery {
     public int getNum() {
         return num;
     }
+    @JsonProperty
+    public String getUrl6() {
+        return url6;
+    }
+    @JsonProperty
+    public String getUrl7() {
+        return url7;
+    }
+    @JsonProperty
+    public String getUrl8() {
+        return url8;
+    }
+    @JsonProperty
+    public String getUrl9() {
+        return url9;
+    }
+    @JsonProperty
+    public String getCategory() {
+        return category;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -137,7 +192,12 @@ public class Gallery {
                 && g.url2.equals(url2)
                 && g.url3.equals(url3)
                 && g.url4.equals(url4)
-                && g.url1.equals(url5)
+                && g.url5.equals(url5)
+                && g.url6.equals(url6)
+                && g.url7.equals(url7)
+                && g.url8.equals(url8)
+                && g.url9.equals(url9)
+                && g.category.equals(category)
                 && g.description.equals(description)
                 && g.num == num;
     }
@@ -150,16 +210,21 @@ public class Gallery {
         result = 31 * result + url3.hashCode();
         result = 31 * result + url4.hashCode();
         result = 31 * result + url5.hashCode();
+        result = 31 * result + url6.hashCode();
+        result = 31 * result + url7.hashCode();
+        result = 31 * result + url8.hashCode();
+        result = 31 * result + url9.hashCode();
+        result = 31 * result + category.hashCode();
         result = 31 * result + description.hashCode();
         result = 31 * result + num;
         return result;
     }
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder(super.toString());
         sb.append(" | Title is: ").append(title);
-        sb.append(" | URL is: ").append(url1).append(url2).append(url3).append(url4).append(url5);
+        sb.append(" | URL is: ").append(url1).append(url2).append(url3).append(url4)
+                .append(url5).append(url6).append(url7).append(url8).append(url9);
         sb.append(" | Num of Photos is: ").append(num);
         sb.append(" | Description is: ").append(description);
         return sb.toString();

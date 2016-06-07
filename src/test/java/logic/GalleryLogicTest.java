@@ -38,7 +38,7 @@ public class GalleryLogicTest {
 
     @Test
     public void testPost() throws Exception {
-        gl.post("title1","description");
+        gl.post("title1","description", "category");
         verify(dao, times(1)).add(any(GalleryPOJO.class));
     }
 
