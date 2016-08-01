@@ -14,6 +14,9 @@ Self training and interest. Without this, my website could only be a static one.
 Actually you don't need to install it. Just like how the code example above works, it is already a live service. If you want to download it and make it your own version, just clone it, and go to the hibernate configuration file to change the url, database driver, dial0g, password and username. 
 
 ##API Reference
+
+Recentlly I changed some of my API.
+
 ####Base domain: 
 alvin-api.herokuapp.com/application
 ####Resources: 
