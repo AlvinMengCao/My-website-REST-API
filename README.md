@@ -23,6 +23,7 @@ Actually you don't need to install it. Just like how the code example above work
 BlogResource:     [alvin-api.herokuapp.com/application/blogs](alvin-api.herokuapp.com/application/blogs)
 
 PhotoResource:    [alvin-api.herokuapp.com/application/photos](alvin-api.herokuapp.com/application/photos)
+
 CommentResource:  [alvin-api.herokuapp.com/application/comments](alvin-api.herokuapp.com/application/comments)
 
 ##Tests
