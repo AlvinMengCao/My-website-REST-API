@@ -17,14 +17,14 @@ Actually you don't need to install it. Just like how the code example above work
 ##API Reference
 
 ####Base domain: 
-[alvin-api.herokuapp.com/application](alvin-api.herokuapp.com/application)
+[alvin-api.herokuapp.com/application](http://alvin-api.herokuapp.com/application)
 
 ####Resources: 
-BlogResource:     [alvin-api.herokuapp.com/application/blogs](alvin-api.herokuapp.com/application/blogs)
+BlogResource:     [alvin-api.herokuapp.com/application/blogs](http://alvin-api.herokuapp.com/application/blogs)
 
-PhotoResource:    [alvin-api.herokuapp.com/application/photos](alvin-api.herokuapp.com/application/photos)
+PhotoResource:    [alvin-api.herokuapp.com/application/photos](http://alvin-api.herokuapp.com/application/photos)
 
-CommentResource:  [alvin-api.herokuapp.com/application/comments](alvin-api.herokuapp.com/application/comments)
+CommentResource:  [alvin-api.herokuapp.com/application/comments](http://alvin-api.herokuapp.com/application/comments)
 
 ##Tests
 Use TDD to build DAO part of this project, and it already contians Unit test cases for all DAO. And I also manually test all types of request. Gonna add mock test for API and DOA. Test cases cover all classes and methods. Applied unit test and mock test.
