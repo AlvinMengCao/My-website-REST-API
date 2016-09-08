@@ -17,6 +17,7 @@ public class Gallery {
     private String url5;
     private Date date;
     private String description;
+    private String category;
     private int num;
 
     public static class Builder{
@@ -30,6 +31,7 @@ public class Gallery {
         private String url4 = "url4";
         private String url5 = "url5";
         private String description = "no description";
+        private String category = "default";
         private int num = 0;
         public Builder(int id, String title, Date date){
             this.id = id;
@@ -56,6 +58,10 @@ public class Gallery {
             url5 = val;
             return this;
         }
+        public Builder category(String c){
+            category = c;
+            return this;
+        }
         public Builder description(String val){
             description = val;
             return this;
@@ -79,6 +85,7 @@ public class Gallery {
         url5 = b.url5;
         date = b.date;
         description = b.description;
+        category = b.category;
         num = b.num;
     }
 
@@ -119,6 +126,8 @@ public class Gallery {
         return description;
     }
     @JsonProperty
+    public String getCategory(){ return category;}
+    @JsonProperty
     public int getNum() {
         return num;
     }
@@ -139,6 +148,7 @@ public class Gallery {
                 && g.url4.equals(url4)
                 && g.url1.equals(url5)
                 && g.description.equals(description)
+                && g.category.equals(category)
                 && g.num == num;
     }
     @Override
@@ -151,6 +161,7 @@ public class Gallery {
         result = 31 * result + url4.hashCode();
         result = 31 * result + url5.hashCode();
         result = 31 * result + description.hashCode();
+        result = 31 * result + category.hashCode();
         result = 31 * result + num;
         return result;
     }

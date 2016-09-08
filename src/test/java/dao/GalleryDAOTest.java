@@ -58,7 +58,7 @@ public class GalleryDAOTest {
         List<GalleryPOJO> list = dao.getAll();
         int size = dao.getSize();
         Assert.assertEquals(list.size(), size);
-        Assert.assertEquals(list.get(list.size() - 1),
+        Assert.assertEquals(list.get(0),
                 dao.getLast());
     }
 

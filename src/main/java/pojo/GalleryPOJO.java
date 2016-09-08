@@ -20,6 +20,7 @@ public class GalleryPOJO {
     private String url4;
     private String url5;
     private Date date;
+    private String category;
     private String description;
     private int num;
 
@@ -36,6 +37,7 @@ public class GalleryPOJO {
         url5 = b.url5;
         date = b.date;
         description = b.description;
+        category = b.category;
         num = b.num;
     }
     public static class Builder{
@@ -47,6 +49,7 @@ public class GalleryPOJO {
         private String url3 = "url3";
         private String url4 = "url4";
         private String url5 = "url5";
+        private String category = "default";
         private String description = "no description";
         private int num = 0;
         public Builder(String title, Date date){
@@ -71,6 +74,10 @@ public class GalleryPOJO {
         }
         public Builder url5(String val){
             url5 = val;
+            return this;
+        }
+        public Builder category(String val){
+            category = val;
             return this;
         }
         public Builder description(String val){
@@ -150,8 +157,15 @@ public class GalleryPOJO {
     public void setUrl5(String url5) {
         this.url5 = url5;
     }
+    public String getCategory() {
+        return category;
+    }
+    public void setCategory(String category) {
+        this.category = category;
+    }
 
     @Override
+
     public boolean equals(Object o) {
         if (o == this){
             return true;
@@ -167,6 +181,7 @@ public class GalleryPOJO {
                 && g.url4.equals(url4)
                 && g.url5.equals(url5)
                 && g.description.equals(description)
+                && g.category.equals(category)
                 && g.num == num;
     }
 
@@ -180,6 +195,7 @@ public class GalleryPOJO {
         result = 31 * result + url4.hashCode();
         result = 31 * result + url5.hashCode();
         result = 31 * result + description.hashCode();
+        result = 31 * result + category.hashCode();
         result = 31 * result + num;
         return result;
     }
@@ -191,6 +207,7 @@ public class GalleryPOJO {
         sb.append(" | URL is: ").append(url1).append(url2).append(url3).append(url4).append(url5);
         sb.append(" | Num of Photos is: ").append(num);
         sb.append(" | Description is: ").append(description);
+        sb.append(" | Category is: ").append(category);
         return sb.toString();
     }
 }
