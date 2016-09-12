@@ -16,7 +16,7 @@ Actually you don't need to install it. Just like how the code example above work
 
 ##API Reference
 
-####Base domain: 
+####Base domain(provided by Heroku): 
 alvin-api.herokuapp.com/application
 
 ####Resources: 
